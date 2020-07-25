@@ -1,2 +1,5 @@
 alias coo_python='python3 -m cookiecutter gh:natemarks/cookiecutter-pypackage -o $HOME/Projects'
 alias m_tmp='cd $(mktemp -d -t deleteme.XXX)'
+alias do_prune_everything='docker system prune -a'
+alias git_rollback_to_remote='git reset --hard @{u}'
+alias git_rm_ignored='git rm -r --cached . && git add . && git commit -m "purged files based on new gitignopre fix"'
