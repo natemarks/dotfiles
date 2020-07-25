@@ -1,4 +1,4 @@
-
+export "PATH=$HOME/bin:$PATH"
 if [ -d $HOME/bashrc.d ]; then
   for i in $HOME/bashrc.d/*.sh; do
     if [ -r $i ]; then
@@ -7,4 +7,3 @@ if [ -d $HOME/bashrc.d ]; then
   done
   unset i
 fi
-
