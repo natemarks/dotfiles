@@ -1,4 +1,5 @@
-alias coo_python='python3 -m cookiecutter gh:natemarks/cookiecutter-pypackage -o $HOME/Projects'
+alias coo_python='python3 -m cookiecutter $HOME/cookiecutter/cookiecutter-pypackage -o $HOME/Projects'
+alias coo_golang='python3 -m cookiecutter $HOME/cookiecutter/cookiecutter-golang -o $HOME/go/src'
 alias m_tmp='cd $(mktemp -d -t deleteme.XXX)'
 alias do_prune_everything='docker system prune -a'
 alias git_rollback_to_remote='git reset --hard @{u}'
