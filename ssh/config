@@ -1,17 +1,12 @@
 Host github.com
   HostName github.com
-  IdentityFile ~/.ssh/emoon-imprivata
+  IdentityFile ~/.ssh/nmarks_imprivata
   IdentitiesOnly yes
-
-
-
-Host github-personal
-  HostName github.com
-  IdentityFile ~/.ssh/sertvitas
-  IdentitiesOnly yes
+  AddKeysToAgent yes
 
 
 Host ssh.dev.azure.com
-  IdentityFile ~/.ssh/emoon-imprivata
+  IdentityFile ~/.ssh/nmarks_imprivata
   IdentitiesOnly yes
+  AddKeysToAgent yes
 

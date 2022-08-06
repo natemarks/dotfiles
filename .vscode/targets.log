@@ -1,0 +1,589 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Aug  6 05:53:10 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# makefile (from 'Makefile', line 3)
+DEFAULT_BRANCH := main
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+_fzf_orig_completion_ln = complete -F %s ln #_longopt
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/nate/projects/dotfiles
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/103
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:51919
+# environment
+_fzf_orig_completion_less = complete -F %s less #_longopt
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+USERNAME = nate
+# environment
+_fzf_orig_completion_telnet = complete -F %s telnet #_known_hosts
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# environment
+MANAGERPID = 2264
+# environment
+_fzf_orig_completion_uniq = complete -F %s uniq #_longopt
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/nate/projects/dotfiles
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
+# environment
+_fzf_orig_completion_tail = complete -F %s tail #_longopt
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/nate/bin:/home/nmarks/bin/packer/1.7.10:/home/nate/.local/bin:/home/nate/bin:/home/nate/.pyenv/shims:/home/nate/.local/bin:/home/nate/bin:/home/nate/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/nate/.local/share/JetBrains/Toolbox/scripts:/home/nate/.fzf/bin:/home/nate/bin/go/1.18.1/bin:/home/nate/go/bin
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/nate-Z170XP-SLI:@/tmp/.ICE-unix/2491,unix/nate-Z170XP-SLI:/tmp/.ICE-unix/2491
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/nate/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+_fzf_orig_completion_tee = complete -F %s tee #_longopt
+# environment
+SNAP = /snap/code/103
+# environment
+_fzf_orig_completion_cd = complete -o nospace -F %s cd #_cd
+# makefile (from 'Makefile', line 12)
+EPOCH = $(shell date +%s)
+# environment
+SNAP_VERSION = da76f933
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+_fzf_orig_completion_awk = complete -F %s awk #_longopt
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+PYENV_ROOT = /home/nate/.pyenv
+# environment
+INVOCATION_ID = 06e3ba9062f041278e216e99aead35e6
+# makefile (from 'Makefile', line 5)
+COMMIT := 21edfed448bb89cf4b5f0dca2498e0e80eecbf8a
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# makefile (from 'Makefile', line 8)
+POWERLINE = $(HOME)/.config/powerline
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# makefile (from 'Makefile', line 4)
+PRJ := /home/nate/projects/dotfiles
+# environment
+DISPLAY = :1
+# environment
+_fzf_orig_completion_rm = complete -F %s rm #_longopt
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 7)
+BASHRCD = $(HOME)/bashrc.d
+# environment
+PWD = /home/nate/projects/dotfiles
+# default
+.LOADED := 
+# environment
+_fzf_orig_completion_diff = complete -F %s diff #_longopt
+# environment
+SSH_AGENT_PID = 2456
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/nate
+# environment
+_fzf_orig_completion_cat = complete -F %s cat #_longopt
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/nate/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+LOGNAME = nate
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = d0b9Y9k1Of5SzXshx9o3nBapYALFdYOZFmqveIg7RSCtjZzUTw4F
+# environment
+_fzf_orig_completion_rmdir = complete -F %s rmdir #_longopt
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/nate/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 13)
+MKDIR = mkdir -p
+# environment
+MAKELEVEL := 0
+# environment
+SNAP_REAL_HOME = /home/nate
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# environment
+SNAP_USER_DATA = /home/nate/snap/code/103
+# environment
+SHLVL = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = nate
+# environment
+SNAP_REVISION = 103
+# makefile (from 'Makefile', line 1)
+.DEFAULT_GOAL := help
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# makefile (from 'Makefile', line 15)
+LNF = ln -vsf
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+_fzf_orig_completion_du = complete -F %s du #_longopt
+# default
+MAKE_COMMAND := make
+# environment
+_fzf_orig_completion_ftp = complete -F %s ftp #_known_hosts
+# environment
+OLDPWD = /home/nate/projects
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# makefile (from 'Makefile', line 10)
+OS = $(shell uname -s)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-f508119b-1.70.0-main.sock
+# environment
+_fzf_orig_completion_ld = complete -F %s ld #_longopt
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+_fzf_orig_completion_head = complete -F %s head #_longopt
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+QT_ACCESSIBILITY = 1
+# environment
+DESKTOP_AUTOSTART_ID = 10a58b8bfdfedd8f29165977616460890600000024910018
+# 'override' directive
+.SHELLSTATUS := 0
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = d0b9Y9k1Of5SzXshx9o3nBapYALFdYOZFmqveIg7RSCtjZzUTw4F
+# automatic
+<F = $(notdir $<)
+# environment
+_fzf_orig_completion_wc = complete -F %s wc #_longopt
+# environment
+SNAP_NAME = code
+# makefile (from 'Makefile', line 6)
+BIN = $(HOME)/bin
+# environment
+EDITOR = nvim
+# environment
+_fzf_orig_completion_mv = complete -F %s mv #_longopt
+# environment
+LC_ALL = C
+# environment
+_fzf_orig_completion_cp = complete -F %s cp #_longopt
+# environment
+_fzf_orig_completion_ls = complete -F %s ls #_longopt
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/b9cb989b_4cc5_411f_895d_174fb4321e5e
+# automatic
+^F = $(notdir $^)
+ 
+# environment
+GNOME_TERMINAL_SERVICE = :1.79
+# default
+SUFFIXES := 
+# environment
+_fzf_orig_completion_pushd = complete -o nospace -F %s pushd #_cd
+# makefile (from 'Makefile', line 14)
+LN = ln -vs
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+_fzf_orig_completion_sed = complete -F %s sed #_longopt
+# default
+.RECIPEPREFIX := 
+# environment
+_fzf_orig_completion_vi = complete -F %s vi #_filedir_xspec
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+_fzf_orig_completion_grep = complete -F %s grep #_longopt
+# environment
+VSCODE_PID = 30225
+# environment
+_fzf_orig_completion_sort = complete -F %s sort #_longopt
+# variable set hash-table stats:
+# Load=155/1024=15%, Rehash=0, Collisions=21/187=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2055, inode 7209006): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+stayback:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 71):
+	$(MKDIR) $(HOME)/.stayback
+	$(HOME)/bin/decrypt $(PWD)/stayback.json.gpg
+	$(LN) $(PRJ)/stayback.json  $(HOME)/.stayback.json
+
+ssh-config:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 104):
+	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config
+
+all: packages gpg powerline bash gitconfig ssh-config
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/3=0%
+
+vim:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 76):
+	$(LN) $(PRJ)/vim/vimrc  $(HOME)/.vimrc
+
+.PHONY: gitconfig vim powerline
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+gitconfig:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 62):
+	$(LN) $(PRJ)/gitconfig $(HOME)/.gitconfig
+
+gpg: home
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 65):
+	curl --silent -o $(BIN)/encrypt https://raw.githubusercontent.com/natemarks/pipeline-scripts/main/scripts/encrypt
+	curl --silent -o $(BIN)/decrypt https://raw.githubusercontent.com/natemarks/pipeline-scripts/main/scripts/decrypt
+	chmod 755 $(BIN)/encrypt
+	chmod 755 $(BIN)/decrypt
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-06 05:47:36.351314837
+#  File has been updated.
+#  Successfully updated.
+
+remove-all: rm-bash rm-gpg rm-powerline rm-ssh-config rm-gitconfig
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+packages:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := packages
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/11=9%
+#  recipe to execute (from 'Makefile', line 83):
+	sudo apt-get install -y \
+	curl \
+	git \
+    tree \
+    make \
+    wget \
+    zip \
+    unzip \
+    seahorse-nautilus \
+    fzf \
+    ripgrep \
+    silversearcher-ag \
+    jq \
+    fonts-powerline \
+    dconf-cli \
+    uuid-runtime \
+    tmux \
+    shellcheck \
+    hunspell;
+
+rm-ssh-config:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 119):
+	-rm -f $(HOME)/.ssh/config
+
+help:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
+home:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	# manage all of my executables in $HOME/bin
+	$(MKDIR) $(HOME)/bin
+	# manage temporary/scratch files in $HOME/tmp
+	$(MKDIR) $(HOME)/tmp
+	# manage project files in $HOME/projects
+	$(MKDIR) $(HOME)/projects
+
+powerline:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	pip3 install --user powerline-status
+	pip3 install --user powerline-gitstatus
+	$(MKDIR) $(POWERLINE)/colorschemes
+	$(MKDIR) $(POWERLINE)/themes/shell
+	$(LN) $(PRJ)/powerline/colorschemes_default.json  $(POWERLINE)/colorschemes/default.json
+	$(LN) $(PRJ)/powerline/themes_shell_default.json  $(POWERLINE)/themes/shell/default.json
+
+rm-powerline:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 115):
+	-rm -f $(POWERLINE)/colorschemes/default.json
+	-rm -f $(POWERLINE)/themes/shell/default.json
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+shellcheck:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 79):
+	find . -type f -name "*.sh" ! -name 'ohmyzsh_git_aliases.sh' -exec "shellcheck" "--format=gcc" {} \;
+
+rm-gitconfig:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 122):
+	-rm -f $(HOME)/.gitconfig
+
+bash:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 38):
+	$(MKDIR) $(BASHRCD)
+	# some desc
+	$(LN) $(PRJ)/bashrc.d/add_home_bin_to_path.sh  $(BASHRCD)/add_home_bin_to_path.sh
+	$(LN) $(PRJ)/bashrc.d/aliases.sh  $(BASHRCD)/aliases.sh
+	$(LN) $(PRJ)/bashrc.d/aws_functions.sh $(BASHRCD)/aws_functions.sh
+	$(LN) $(PRJ)/bashrc.d/bash_functions.sh $(BASHRCD)/bash_functions.sh
+	$(LN) $(PRJ)/bashrc.d/bash_powerline.sh $(BASHRCD)/bash_powerline.sh
+	$(LN) $(PRJ)/bashrc.d/editor.sh  $(BASHRCD)/editor.sh
+	$(LN) $(PRJ)/bashrc.d/fzf.sh  $(BASHRCD)/fzf.sh
+	$(LN) $(PRJ)/bashrc.d/git_aliases.sh $(BASHRCD)/git_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/git_functions.sh $(BASHRCD)/git_functions.sh
+	$(LN) $(PRJ)/bashrc.d/go.sh $(BASHRCD)/go.sh
+	$(LN) $(PRJ)/bashrc.d/ohmyzsh_git_aliases.sh  $(BASHRCD)/ohmyzsh_git_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/packer.sh $(BASHRCD)/packer.sh
+	$(LN) $(PRJ)/bashrc.d/ssh_aliases.sh $(BASHRCD)/ssh_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/temp_aliases.sh  $(BASHRCD)/temp_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/terragrunt_aliases.sh  $(BASHRCD)/terragrunt_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/tmux_aliases.sh $(BASHRCD)/tmux_aliases.sh
+	$(LN) $(PRJ)/bashrc.d/docker.sh $(BASHRCD)/docker.sh
+	sed -i.$(EPOCH) '/\.bashrc\.local/d' $(HOME)/.bashrc
+	echo '. $(HOME)/.bashrc.local' >> $(HOME)/.bashrc
+	$(LN) $(PRJ)/bashrc.local $(HOME)/.bashrc.local
+
+rm-gpg:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 111):
+	-rm -f $(BIN)/encrypt
+	-rm -f $(BIN)/decrypt
+
+rm-bash:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 107):
+	-rm -rf $(BASHRCD)
+	-rm -f $(HOME)/.bashrc.local
+
+# files hash-table stats:
+# Load=22/1024=2%, Rehash=0, Collisions=0/52=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 36 / storage = 327 B / avg = 9 B
+# current buf: size = 8162 B / used = 327 B / count = 36 / avg = 9 B
+
+# strcache performance: lookups = 79 / hit rate = 54%
+# hash-table stats:
+# Load=36/8192=0%, Rehash=0, Collisions=1/79=1%
+# Finished Make data base on Sat Aug  6 05:53:10 2022
+
+ 

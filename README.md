@@ -1,5 +1,4 @@
-This project configures a bash environment on Ubuntu 20.04 to look exactly like Erik Moon's. The make targets manage
-files you may already have. you'll need to explicitly delete or move them. The make targets DO NOT automatically
+This project configures a bash environment on Ubuntu 20.04 to look exactly like mine. The make targets manage files you may already have. you'll need to explicitly delete or move them. The make targets DO NOT automatically
 overwrite your stuff.
 
 WARNING: The exception is that we directly edit your $(HOME)/.bashrc:

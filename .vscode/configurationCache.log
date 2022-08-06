@@ -1,0 +1,1 @@
+{"buildTargets":["all","bash","gitconfig","gpg","help","home","packages","powerline","remove-all","rm-bash","rm-gitconfig","rm-gpg","rm-powerline","rm-ssh-config","shellcheck","ssh-config","stayback","vim"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
