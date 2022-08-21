@@ -1,4 +1,6 @@
 #!/usr.bin/env bash
+set -Eeuo pipefail
+
 GO_VERSION="1.18.5"
 
 mkdir -p ~/bin/go/"${GO_VERSION}"

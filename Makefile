@@ -18,6 +18,10 @@ LNF = ln -vsf
 help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
+pyenv: ## install pyenv
+	 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+
+
 home: ## configure home directory
 	# manage all of my executables in $HOME/bin
 	$(MKDIR) $(HOME)/bin
@@ -54,6 +58,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/terragrunt_aliases.sh  $(BASHRCD)/terragrunt_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/tmux_aliases.sh $(BASHRCD)/tmux_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/docker.sh $(BASHRCD)/docker.sh
+	$(LN) $(PRJ)/bashrc.d/pyenv.sh $(BASHRCD)/pyenv.sh
 	sed -i.$(EPOCH) '/\.bashrc\.local/d' $(HOME)/.bashrc
 	echo '. $(HOME)/.bashrc.local' >> $(HOME)/.bashrc
 	$(LN) $(PRJ)/bashrc.local $(HOME)/.bashrc.local
@@ -83,22 +88,38 @@ packages: ## install required packages
 	sudo apt-get install -y \
 	curl \
 	git \
-    tree \
-    make \
-    wget \
-    zip \
-    unzip \
-    seahorse-nautilus \
-    fzf \
-    ripgrep \
-    silversearcher-ag \
-    jq \
-    fonts-powerline \
-    dconf-cli \
-    uuid-runtime \
-    tmux \
-    shellcheck \
-    hunspell;
+	tree \
+	make \
+	wget \
+	zip \
+	unzip \
+	seahorse-nautilus \
+	fzf \
+	ripgrep \
+	silversearcher-ag \
+	jq \
+	fonts-powerline \
+	dconf-cli \
+	uuid-runtime \
+	tmux \
+	shellcheck \
+	hunspell \
+	build-essential \
+	libssl-dev \
+	zlib1g-dev \
+	libbz2-dev \
+	libreadline-dev \
+	libsqlite3-dev \
+	llvm \
+	libncursesw5-dev \
+	xz-utils \
+	tk-dev \
+	libxml2-dev \
+	libxmlsec1-dev \
+	libffi-dev \
+	liblzma-dev;
+
+
 
 ssh-config: ## ssh config
 	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config
