@@ -23,7 +23,9 @@ pyenv: ## install pyenv
 	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 awscli_v2: ## download and install awscliv2
-	bash scripts/install_awscli_v2.sh
+	-bash scripts/install_awscli_v2.sh
+	$(MKDIR) $(HOME)/.aws
+	$(LN) $(PRJ)/awscli/config  $(HOME)/.aws/config
 
 home: ## configure home directory
 	# manage all of my executables in $HOME/bin
