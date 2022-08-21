@@ -155,3 +155,12 @@ Do you really want to set this key to ultimate trust? (y/N) y
 ### install vscode 
 install 
 configure sync
+
+
+### install and configure awscli v2
+```
+make awscli_v2
+```
+copy and decrypt config and credentials
+s3://com.imprivata.371143864265.us-east-1.personal/config.gpg
+s3://com.imprivata.371143864265.us-east-1.personal/credentials.gpg
