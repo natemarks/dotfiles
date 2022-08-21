@@ -1,6 +1,7 @@
 .DEFAULT_GOAL := help
 .PHONY: gitconfig vim powerline
 DEFAULT_BRANCH := main
+SHELL := /bin/bash
 PRJ := $(PWD)
 COMMIT := $(shell git rev-parse HEAD)
 BIN = $(HOME)/bin
@@ -119,6 +120,8 @@ packages: ## install required packages
 	libffi-dev \
 	liblzma-dev;
 
+vscode: ## install vscode
+	bash scripts/install_vscode.sh
 
 
 ssh-config: ## ssh config
