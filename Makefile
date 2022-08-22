@@ -27,6 +27,11 @@ awscli_v2: ## download and install awscliv2
 	$(MKDIR) $(HOME)/.aws
 	$(LN) $(PRJ)/awscli/config  $(HOME)/.aws/config
 
+docker: ## install docker
+	bash scripts/install_docker.sh
+
+slack: ## install slack
+	
 home: ## configure home directory
 	# manage all of my executables in $HOME/bin
 	$(MKDIR) $(HOME)/bin
@@ -122,7 +127,12 @@ packages: ## install required packages
 	libxml2-dev \
 	libxmlsec1-dev \
 	libffi-dev \
-	liblzma-dev;
+	liblzma-dev \
+	apt-transport-https \
+	ca-certificates \
+	software-properties-common \
+	gnupg \
+	lsb-release;
 
 vscode: ## install vscode
 	bash scripts/install_vscode.sh
