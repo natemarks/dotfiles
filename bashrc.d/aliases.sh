@@ -13,16 +13,12 @@ alias cdp='cd $(find ~/projects -maxdepth 2 -type d | fzf)'
 # https://insujang.github.io/2020-04-04/go-modules/
 # alias cdp='cd $(find ~/projects ~/go/src -maxdepth 2 -type d | fzf)'
 alias vim='nvim'
-#alias aws_imprivata-sandbox='eval "$(gpg --decrypt --recipient npmarks@gmail.com ~/bin/aws_imprivata-sandbox.sh.gpg)"'
-alias aws_i-platform-dev='eval "$(gpg --decrypt --recipient npmarks@gmail.com ~/bin/aws_i-platform-dev.sh.gpg)"'
-alias aws_cortext-ng='eval "$(gpg --decrypt --recipient npmarks@gmail.com ~/bin/aws_cortext-ng.sh.gpg)"'
-alias aws_imprivata-natemarks='eval "$(gpg --decrypt --recipient npmarks@gmail.com ~/bin/aws_imprivata-natemarks.sh.gpg)"'
 # use vscode in current directory
 alias vcc='code -n .'
 # open project in vscode using fzf
 alias vcp='code -n $(find ~/projects -maxdepth 2 -type d | fzf)'
 # aws account aliases
 alias aws_imprivata-sandbox='export AWS_PROFILE=imprivata-sandbox'
-alias aws_platform-dev='export AWS_PROFILE=platform-dev'
+alias aws_platform-dev='export AWS_PROFILE=i-platform-dev'
 alias aws_production='export AWS_PROFILE=production'
 alias aws_whoami='aws sts get-caller-identity'
