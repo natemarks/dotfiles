@@ -32,6 +32,9 @@ If you need to update and re-run it, the make targets are not idempotent so you'
 make remove-all
 ```
 
+## Supported Hardware Notes
+meeting audio: https://smile.amazon.com/gp/product/B00AQUO5RI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
+webcam: https://smile.amazon.com/gp/product/B085TFF7M1/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
 
 ## New Build Procedure
 
