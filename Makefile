@@ -19,6 +19,13 @@ LNF = ln -vsf
 help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
+nodejs: ## Install NodeJS
+	curl -sL https://deb.nodesource.com/setup_16.x | sudo bash -;
+	sudo apt -y install nodejs
+
+aws_cdk: nodejs ## Install AWS CDK
+	sudo npm install -g aws-cdk
+
 pyenv: ## install pyenv
 	-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
