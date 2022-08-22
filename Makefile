@@ -20,7 +20,7 @@ help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 pyenv: ## install pyenv
-	git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+	-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 
 awscli_v2: ## download and install awscliv2
 	-bash scripts/install_awscli_v2.sh
@@ -31,7 +31,7 @@ docker: ## install docker
 	bash scripts/install_docker.sh
 
 slack: ## install slack
-	
+
 home: ## configure home directory
 	# manage all of my executables in $HOME/bin
 	$(MKDIR) $(HOME)/bin
