@@ -139,7 +139,8 @@ packages: ## install required packages
 	ca-certificates \
 	software-properties-common \
 	gnupg \
-	lsb-release;
+	lsb-release \
+	python3.8-venv;
 
 vscode: ## install vscode
 	bash scripts/install_vscode.sh

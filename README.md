@@ -86,11 +86,13 @@ make gitconfig
 ```
 
 
-### clone dotfiles 
+### clone dotfiles
+Downlaod the dotfiles repo and install all of the common/basic stuff with 'make all'
 ```
 mkdir -p ~/projects
 cd ~/projects
 git clone git@github.com:natemarks/dotfiles.git
+make all
 ```
 
 ### Import and trust gpg keys
@@ -165,3 +167,34 @@ copy and decrypt config and credentials
 
 s3://com.imprivata.371143864265.us-east-1.personal/config.gpg
 s3://com.imprivata.371143864265.us-east-1.personal/credentials.gpg
+
+### install docker
+```
+make docker
+```
+### install anyconnect
+https://github.com/imprivata-cloud/desktop-playbooks/blob/main/anyconnect/README.md
+
+### install pyenv
+```
+make pyenv
+```
+
+### install aws cdk
+```
+make aws_cdk
+```
+### install slack
+Download the slack .deb package and install it 
+
+```
+sudo dpkg -i ~/Downloads/slack-desktop-4.27.156-amd64.deb 
+```
+### install zoom
+
+```
+sudo dpkg -i ~/Downloads/zoom_amd64.deb
+```
+
+I also got an erro message the first time I I tried to install it but this helped:
+https://askubuntu.com/questions/990580/errors-installing-zoom-conferencing
