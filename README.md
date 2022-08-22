@@ -173,6 +173,8 @@ s3://com.imprivata.371143864265.us-east-1.personal/config.gpg
 s3://com.imprivata.371143864265.us-east-1.personal/credentials.gpg
 
 ### install docker
+IMPORTANT: After installing, you'll get permiossions errors until you reboot/relog to get the linux user group add to take effect.
+
 ```
 make docker
 ```
