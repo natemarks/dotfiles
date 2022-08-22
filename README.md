@@ -43,6 +43,7 @@ Installation
  - 4GB boot (for ample kernel upgrade space)
  - encrypted drive
  - name initial account adminnmarks. reserve for emergencies
+ - 2GB or 4GB swap partition
 
  [upgrade firmware for laptopm and dock](https://support.lenovo.com/us/en/solutions/ht510810-how-to-do-software-updates-linux)
 
