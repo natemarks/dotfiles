@@ -7,3 +7,4 @@
 # Built Visual Studio Code Extensions
 *.vsix
 
+bashrc.d/work_aliases.sh
