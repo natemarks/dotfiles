@@ -152,6 +152,9 @@ neovim: ## install neovim
 	-rm $(HOME)/.config/nvim/init.vim
 	$(LN) $(PRJ)/neovim/init.vim $(HOME)/.config/nvim/init.vim
 
+lazygit: ## install lazygit
+	bash scripts/install_lazygit.sh
+
 ssh-config: ## ssh config
 	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config
 
