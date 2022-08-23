@@ -8,3 +8,6 @@
 *.vsix
 
 bashrc.d/work_aliases.sh
+
+# ignore downloaded deb files
+*.deb
