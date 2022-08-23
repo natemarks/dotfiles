@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: gitconfig vim powerline
+.PHONY: gitconfig vim powerline neovim
 DEFAULT_BRANCH := main
 SHELL := /bin/bash
 PRJ := $(PWD)
@@ -148,6 +148,9 @@ vscode: ## install vscode
 
 neovim: ## install neovim
 	bash scripts/install_neovim.sh
+	mkdir -p $(HOME)/.config/nvim
+	-rm $(HOME)/.config/nvim/init.vim
+	$(LN) $(PRJ)/neovim/init.vim $(HOME)/.config/nvim/init.vim
 
 ssh-config: ## ssh config
 	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config

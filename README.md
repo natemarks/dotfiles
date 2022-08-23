@@ -209,4 +209,6 @@ sudo dpkg -i ~/Downloads/zoom_amd64.deb
 I also got an erro message the first time I I tried to install it but this helped:
 https://askubuntu.com/questions/990580/errors-installing-zoom-conferencing
 
-### conf
+### neovim
+
+https://raw.githubusercontent.com/mbrochh/vim-as-a-python-ide/master/.vimrc

@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
+if which nvim; then
+  exit 0
+fi
+
 NVIM_VERSION=0.7.2
 NVIM_INSTALLER=nvim-linux64.deb
 NVIM_URL="https://github.com/neovim/neovim/releases/download/v${NVIM_VERSION}/${NVIM_INSTALLER}"
