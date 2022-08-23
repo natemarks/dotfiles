@@ -146,7 +146,7 @@ packages: ## install required packages
 vscode: ## install vscode
 	bash scripts/install_vscode.sh
 
-neovim: ## install vscode
+neovim: ## install neovim
 	bash scripts/install_neovim.sh
 
 ssh-config: ## ssh config
