@@ -11,3 +11,4 @@ bashrc.d/work_aliases.sh
 
 # ignore downloaded deb files
 *.deb
+**/zsh_history
