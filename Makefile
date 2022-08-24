@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: gitconfig vim powerline neovim
+.PHONY: gitconfig vim powerline neovim bin
 DEFAULT_BRANCH := main
 SHELL := /bin/bash
 PRJ := $(PWD)
@@ -39,13 +39,20 @@ docker: ## install docker
 
 slack: ## install slack
 
-home: ## configure home directory
-	# manage all of my executables in $HOME/bin
+bin: ## create and configure $HOME/bin
 	$(MKDIR) $(HOME)/bin
-	# manage temporary/scratch files in $HOME/tmp
+	-rm -f $(HOME)/bin/encrypt
+	$(LN) $(PRJ)/bin/encrypt $(HOME)/bin/encrypt
+	-rm -f $(HOME)/bin/decrypt
+	$(LN) $(PRJ)/bin/decrypt $(HOME)/bin/decrypt
+
+$(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
-	# manage project files in $HOME/projects
+
+$(HOME)/projects: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/projects
+
+home: bin $(HOME)/tmp $(HOME)/projects ## configure home directory
 
 powerline: ## install and configure powerline
 	pip3 install --user powerline-status
