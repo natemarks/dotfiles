@@ -29,3 +29,51 @@ sso_account_id = 371143864265
 sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
+
+
+[profile i-platform-dev]
+region = us-east-1
+output = json
+
+[profile personal]
+region = us-east-1
+output = json
+
+[profile imprivata-nmarks]
+region = us-east-1
+output = json
+
+[profile production]
+region = us-east-1
+output = json
+
+[profile i-platform-dev-mfa]
+role_arn = arn:aws:iam::151924297945:role/Admin_Role_if_MFA
+source_profile = i-platform-dev
+mfa_serial = arn:aws:iam::151924297945:mfa/nmarks
+region = us-east-1
+output = json
+
+[profile i-infrastructure]
+region = us-east-1
+output = json
+
+[profile imprivata-inc]
+region = us-east-1
+output = json
+
+[profile imprivata-sandbox]
+region = us-east-1
+output = json
+
+[profile imprivata-tdonfro]
+region = us-east-1
+output = json
+
+[profile cortext-feature]
+region = us-east-1
+output = json
+
+[profile customersupport-va]
+region = us-east-1
+output = json
