@@ -45,8 +45,8 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/encrypt $(HOME)/bin/encrypt
 	-rm -f $(HOME)/bin/decrypt
 	$(LN) $(PRJ)/bin/decrypt $(HOME)/bin/decrypt
-	-rm -f $(HOME)/bin/search_zsh_histiry
-	$(LN) $(PRJ)/bin/search_zsh_histiry $(HOME)/bin/search_zsh_histiry
+	-rm -f $(HOME)/bin/search_zsh_history
+	$(LN) $(PRJ)/bin/search_zsh_history $(HOME)/bin/search_zsh_history
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
