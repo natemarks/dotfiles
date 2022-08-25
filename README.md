@@ -33,11 +33,17 @@ make remove-all
 ```
 
 ## My Hardware
+
 laptop: ThinkPad P15v Gen 2i (21A90036US)
+
 meeting audio: https://smile.amazon.com/gp/product/B00AQUO5RI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
+
 webcam: https://smile.amazon.com/gp/product/B085TFF7M1/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1
+
 mouse: https://smile.amazon.com/gp/product/B01JPOLLTK/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1
+
 keyboard: https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=8807
+
 monitor: ViewSonic VA2719-2K-smhd
 
 ## New Build Procedure
@@ -48,8 +54,7 @@ Installation
  - encrypted drive
  - name initial account adminnmarks. reserve for emergencies
  - 2GB or 4GB swap partition
-
- [upgrade firmware for laptopm and dock](https://support.lenovo.com/us/en/solutions/ht510810-how-to-do-software-updates-linux)
+endates-linux)
 
 Install drivers
 ```
