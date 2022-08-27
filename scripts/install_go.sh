@@ -11,3 +11,5 @@ tar -xzvf ~/bin/go/${GO_VERSION}/go${GO_VERSION}.linux-amd64.tar.gz \
 --directory ~/bin/go/"${GO_VERSION}"
 
 go install -v golang.org/x/tools/gopls@latest
+go install honnef.co/go/tools/cmd/staticcheck@latest
+go install github.com/go-delve/delve/cmd/dlv@latest
