@@ -46,6 +46,11 @@ keyboard: https://mechanicalkeyboards.com/shop/index.php?l=product_detail&p=8807
 
 monitor: ViewSonic VA2719-2K-smhd
 
+NOTE: I had to run this command on startup to disable the display power off for screen lock
+```
+xset -dpms
+```
+
 ## New Build Procedure
 
 
