@@ -67,6 +67,9 @@ ubuntu-drivers devices
 sudo ubuntu-drivers autoinstall
 ```
 
+Configure swappiness from default (60) to recommended (10)
+https://help.ubuntu.com/community/SwapFaq#What_is_swappiness_and_how_do_I_change_it.3F
+
 Install and run [makemine](https://github.com/natemarks/makemine). then run the command it suggest to create the normal use (not the initial admin) account
 
 Switch to the normal account
