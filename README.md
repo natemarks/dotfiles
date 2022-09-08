@@ -34,6 +34,8 @@ make remove-all
 
 ## My Hardware
 
+32GB RAM was much better than 16GB
+
 laptop: ThinkPad P15v Gen 2i (21A90036US)
 
 meeting audio: https://smile.amazon.com/gp/product/B00AQUO5RI/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&th=1
