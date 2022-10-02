@@ -9,6 +9,7 @@ alias do_prune_everything='docker system prune -a'
 
 alias cdh='cd $(find ~ -maxdepth 1 -type d | fzf)'
 alias cdp='cd $(find ~/projects -maxdepth 2 -type d | fzf)'
+alias cdpp='cd ~/projects'
 # ~/go/... is a part of the deprecated GOPATH config superceded by go modules
 # https://insujang.github.io/2020-04-04/go-modules/
 # alias cdp='cd $(find ~/projects ~/go/src -maxdepth 2 -type d | fzf)'
