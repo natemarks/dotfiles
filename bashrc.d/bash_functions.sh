@@ -49,3 +49,10 @@ pathappemd() {
 function get_projects {
     echo ~/projects
     }
+
+function mk_ramdisk() {
+  # mounts ramdisk of size in MB at /mnt/ramdisk
+  RDIR="${HOME}/ramdisk"
+  mkdir -p "${RDIR}"
+  sudo mount -t tmpfs -o size="${1}m" tmpfs "${RDIR}"
+}
