@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-if which nvim; then
+if command -v nvim; then
   exit 0
 fi
 
