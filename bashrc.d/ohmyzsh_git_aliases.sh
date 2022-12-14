@@ -401,7 +401,7 @@ alias gds='git diff --staged'
 alias gdt='git diff-tree --no-commit-id --name-only -r'
 alias gdu='git diff @{u}'
 alias gdw='git diff --word-diff'
-alias gdlast='git diff ^HEAD HEAD'
+alias gdlast='git diff HEAD^ HEAD'
 
 function gdnolock() {
   git diff "$@" ":(exclude)package-lock.json" ":(exclude)*.lock"
