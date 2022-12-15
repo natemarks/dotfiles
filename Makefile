@@ -156,7 +156,7 @@ packages: ## install required packages
 	gnupg \
 	lsb-release \
 	python3.8-venv \
-	postgresql-client-common;
+	postgresql-client;
 
 vscode: ## install vscode
 	bash scripts/install_vscode.sh
