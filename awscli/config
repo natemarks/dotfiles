@@ -38,6 +38,11 @@ sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
+
+[profile impr-it]
+region = us-east-1
+output = json
+
 [profile i-platform-dev]
 region = us-east-1
 output = json
