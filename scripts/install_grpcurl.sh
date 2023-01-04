@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-# https://github.com/jesseduffield/lazygit/releases/download/v0.36.0/lazygit_0.36.0_Linux_x86_64.tar.gz
-VERSION="0.36.0"
-EXECUTABLE="lazygit"
-TARBALL="${EXECUTABLE}_${VERSION}_Linux_x86_64.tar.gz"
-URL="https://github.com/jesseduffield/lazygit/releases/download/v${VERSION}/${TARBALL}"
+# https://github.com/fullstorydev/grpcurl/releases/download/v1.8.7/grpcurl_1.8.7_linux_x86_64.tar.gz
+VERSION="1.8.7"
+EXECUTABLE="grpcurl"
+TARBALL="${EXECUTABLE}_${VERSION}_linux_x86_64.tar.gz"
+URL="https://github.com/fullstorydev/grpcurl/releases/download/v${VERSION}/${TARBALL}"
 
 if [ $1 = "delete" ]; then
   rm -f "${HOME}/bin/${EXECUTABLE}"
