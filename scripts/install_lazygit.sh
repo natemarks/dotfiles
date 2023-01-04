@@ -7,7 +7,7 @@ EXECUTABLE="lazygit"
 TARBALL="${EXECUTABLE}_${VERSION}_Linux_x86_64.tar.gz"
 URL="https://github.com/jesseduffield/lazygit/releases/download/v${VERSION}/${TARBALL}"
 
-if [ $# -eq 1 ] && [ $1 = "delete" ]; then
+if [ $# -eq 1 ] && [ "$1" = "delete" ]; then
     rm -f "${HOME}/bin/${EXECUTABLE}"
 fi
 

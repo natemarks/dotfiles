@@ -7,7 +7,7 @@ EXECUTABLE="grpcurl"
 TARBALL="${EXECUTABLE}_${VERSION}_linux_x86_64.tar.gz"
 URL="https://github.com/fullstorydev/grpcurl/releases/download/v${VERSION}/${TARBALL}"
 
-if [ $# -eq 1 ] && [ $1 = "delete" ]; then
+if [ $# -eq 1 ] && [ "$1" = "delete" ]; then
     rm -f "${HOME}/bin/${EXECUTABLE}"
 fi
 
