@@ -53,6 +53,13 @@ NOTE: I had to run this command on startup to disable the display power off for 
 xset -dpms
 ```
 
+I also had to disable secure boot and install displaylink drivers:
+
+https://support.displaylink.com/knowledgebase/articles/1944022-how-to-install-displaylink-software-on-ubuntu-20-0
+
+Without that I was struggling to fire up my external display on a lenovo laptop
+
+
 ## New Build Procedure
 
 
