@@ -56,3 +56,8 @@ function mk_ramdisk() {
   mkdir -p "${RDIR}"
   sudo mount -t tmpfs -o size="${1}m" tmpfs "${RDIR}"
 }
+
+function cdk_local() {
+  # prioritize ./node_modules/aws-cdk/bin/ in PATH
+  [ -d "./node_modules/aws-cdk/bin" ] && export PATH="./node_modules/aws-cdk/bin":$PATH
+}
