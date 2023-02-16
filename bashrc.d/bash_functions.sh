@@ -61,3 +61,11 @@ function cdk_local() {
   # prioritize ./node_modules/aws-cdk/bin/ in PATH
   [ -d "./node_modules/aws-cdk/bin" ] && export PATH="./node_modules/aws-cdk/bin":$PATH
 }
+
+function ccutter() {
+  # run cookiecutter with a couple of versions.
+  # this up with:
+  # PYENV_VERSION=3.10.6 pip install cookiecutter
+  # PYENV_VERSION=3.10.6 pip install --upgrade pip setuptools
+  PYENV_VERSION=3.10.6 cookiecutter "${1}" "${2}"
+}
