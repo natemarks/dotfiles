@@ -22,6 +22,7 @@ alias vcc='code -n .'
 alias vcp='code -n $(find ~/projects -maxdepth 2 -type d | fzf)'
 # aws account aliases
 alias aws_imprivata-sandbox='export AWS_PROFILE=imprivata-sandbox'
+alias aws_sandbox='export AWS_PROFILE=imprivata-sandbox'
 alias aws_platform-dev='export AWS_PROFILE=i-platform-dev'
 alias aws_production='export AWS_PROFILE=production'
 alias aws_imprivata-nmarks='export AWS_PROFILE=imprivata-nmarks'
