@@ -69,3 +69,9 @@ function ccutter() {
   # PYENV_VERSION=3.10.6 pip install --upgrade pip setuptools
   PYENV_VERSION=3.10.6 cookiecutter "$@"
 }
+
+# grep pythion files in all projects, but exclude venv
+# find . -type f -name "*.py" -not -path "*/.venv/*" -exec grep -H -n 'secretsmanager' {} \;
+function pygrep() {
+  find "${HOME}/projects" -type f -name "*.py" -not -path "*/.venv/*" -exec grep -H -n "${1}" {} \;
+}
