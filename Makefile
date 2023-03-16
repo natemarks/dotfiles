@@ -52,6 +52,10 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/decrypt $(HOME)/bin/decrypt
 	-rm -f $(HOME)/bin/search_zsh_history
 	$(LN) $(PRJ)/bin/search_zsh_history $(HOME)/bin/search_zsh_history
+	-rm -f $(HOME)/bin/symm_encrypt
+	$(LN) $(PRJ)/bin/symm_encrypt.sh $(HOME)/bin/symm_encrypt
+	-rm -f $(HOME)/bin/symm_decrypt
+	$(LN) $(PRJ)/bin/symm_decrypt.sh $(HOME)/bin/symm_decrypt
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
