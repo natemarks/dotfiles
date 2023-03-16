@@ -114,6 +114,8 @@ vim: ## configure vim
 
 shellcheck: ## shellcheck project files. skip ohmyzsh_git_aliases.sh file
 	find . -type f -name "*.sh" ! -name 'ohmyzsh_git_aliases.sh' -exec "shellcheck" "--format=gcc" {} \;
+	shellcheck --format=gcc bin/encrypt
+	shellcheck --format=gcc bin/decrypt
 
 packages: ## install required packages
     # dconf/uuid for gogh colors
