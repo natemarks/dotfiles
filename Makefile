@@ -42,6 +42,9 @@ awscli_v2: ## download and install awscliv2
 docker: ## install docker
 	bash scripts/install_docker.sh
 
+packer: ## install docker
+	bash scripts/install_packer.sh
+
 slack: ## install slack
 
 bin: ## create and configure $HOME/bin
