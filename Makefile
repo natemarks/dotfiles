@@ -59,6 +59,8 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/symm_encrypt.sh $(HOME)/bin/symm_encrypt
 	-rm -f $(HOME)/bin/symm_decrypt
 	$(LN) $(PRJ)/bin/symm_decrypt.sh $(HOME)/bin/symm_decrypt
+	-rm -f $(HOME)/bin/aws_instance_id_from_private_ip.sh
+	$(LN) $(PRJ)/bin/aws_instance_id_from_private_ip.sh $(HOME)/bin/aws_instance_id_from_private_ip.sh
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
