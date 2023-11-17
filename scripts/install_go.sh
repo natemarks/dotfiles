@@ -10,6 +10,6 @@ curl -L  "https://go.dev/dl/go${GO_VERSION}.linux-amd64.tar.gz" \
 tar -xzvf ~/bin/go/${GO_VERSION}/go${GO_VERSION}.linux-amd64.tar.gz \
 --directory ~/bin/go/"${GO_VERSION}"
 
-go install -v golang.org/x/tools/gopls@latest
-go install honnef.co/go/tools/cmd/staticcheck@latest
-go install github.com/go-delve/delve/cmd/dlv@latest
+~/bin/go/"${GO_VERSION}"/go/bin/go install -v golang.org/x/tools/gopls@latest
+~/bin/go/"${GO_VERSION}"/go/bin/go install honnef.co/go/tools/cmd/staticcheck@latest
+~/bin/go/"${GO_VERSION}"/go/bin/go install github.com/go-delve/delve/cmd/dlv@latest
