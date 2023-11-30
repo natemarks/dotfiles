@@ -54,6 +54,13 @@ sso_role_name = AdministratorAccess
 region = us-west-2
 output = json
 
+[profile onesign-cloudops-159079727094]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 159079727094
+sso_role_name = AdministratorAccess
+region = us-east-1
+output = json
 
 
 [profile bi-prod-882805240806]
