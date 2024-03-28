@@ -168,6 +168,7 @@ packages: ## install required packages
 	lsb-release \
 	python3.8-venv \
 	postgresql-client \
+	xclip \
 	heif-gdk-pixbuf;
 
 vscode: ## install vscode
@@ -175,9 +176,12 @@ vscode: ## install vscode
 
 neovim: ## install neovim
 	bash scripts/install_neovim.sh
-	mkdir -p $(HOME)/.config/nvim
-	-rm $(HOME)/.config/nvim/init.vim
-	$(LN) $(PRJ)/neovim/init.vim $(HOME)/.config/nvim/init.vim
+	-rm -rf $(HOME)/.config/nvim
+	mkdir -p $(HOME)/.config/nvim/lua
+	$(LN) $(PRJ)/neovim/init.lua $(HOME)/.config/nvim/init.lua
+	$(LN) $(PRJ)/neovim/lua/options.lua $(HOME)/.config/nvim/lua/options.lua
+	$(LN) $(PRJ)/neovim/lua/plugins.lua $(HOME)/.config/nvim/lua/plugins.lua
+	$(LN) $(PRJ)/neovim/lua/pluginlist.lua $(HOME)/.config/nvim/lua/pluginlist.lua
 
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh

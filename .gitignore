@@ -12,3 +12,6 @@ bashrc.d/work_aliases.sh
 # ignore downloaded deb files
 *.deb
 **/zsh_history
+loremipsum.txt
+nvim-linux64.tar.gz*
+nvim-linux64/

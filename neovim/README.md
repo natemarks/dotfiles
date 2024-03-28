@@ -1,3 +1,13 @@
+# neovim config
+
+https://github.com/nanotee/nvim-lua-guide
+
+## key bindings and global config
+
+
+```vim
+" Sample .vimrc file by Martin Brochhaus
+" Presented at PyCon APAC 2012
 
 " Rebind <Leader> key
 " I like to have it here becuase it is easier to reach than the default and
@@ -107,3 +117,8 @@ set expandtab
 set nobackup
 set nowritebackup
 set noswapfile
+```
+
+## plugins
+
+plugin mnager: lazy.nvim
