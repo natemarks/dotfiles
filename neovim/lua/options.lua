@@ -101,3 +101,7 @@ vim.opt.backup = false
 vim.opt.writebackup = false
 -- noswapfile doesn't exist
 -- vim.opt.noswapfile = true
+
+
+-- telescope settings
+vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<CR>', {noremap = true})

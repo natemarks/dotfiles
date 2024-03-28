@@ -178,10 +178,15 @@ neovim: ## install neovim
 	bash scripts/install_neovim.sh
 	-rm -rf $(HOME)/.config/nvim
 	mkdir -p $(HOME)/.config/nvim/lua
+	mkdir -p $(HOME)/.config/nvim/after/plugin
 	$(LN) $(PRJ)/neovim/init.lua $(HOME)/.config/nvim/init.lua
 	$(LN) $(PRJ)/neovim/lua/options.lua $(HOME)/.config/nvim/lua/options.lua
 	$(LN) $(PRJ)/neovim/lua/plugins.lua $(HOME)/.config/nvim/lua/plugins.lua
 	$(LN) $(PRJ)/neovim/lua/pluginlist.lua $(HOME)/.config/nvim/lua/pluginlist.lua
+	$(LN) $(PRJ)/neovim/after/plugin/lsp.lua $(HOME)/.config/nvim/after/plugin/lsp.lua
+	$(LN) $(PRJ)/neovim/after/plugin/cmp.lua $(HOME)/.config/nvim/after/plugin/cmp.lua
+	$(LN) $(PRJ)/neovim/after/plugin/telescope.lua $(HOME)/.config/nvim/after/plugin/telescope.lua
+	$(LN) $(PRJ)/neovim/after/plugin/treesitter.lua $(HOME)/.config/nvim/after/plugin/treesitter.lua
 
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh

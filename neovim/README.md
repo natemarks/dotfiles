@@ -119,6 +119,53 @@ set nowritebackup
 set noswapfile
 ```
 
-## plugins
+## plugins 
 
-plugin mnager: lazy.nvim
+https://github.com/vimjoyer/nvim-video
+
+
+    [video](https://www.youtube.com/watch?v=Co7gcSvq6jA)
+
+### comment
+hotkey to comment code
+
+### colorizer
+gruvbox for highlighting
+
+### status bar  
+nvim-lualine
+
+
+### fuzzy search
+
+https://www.youtube.com/watch?v=u_OORAL_xSM
+
+telescope
+
+### treesitter
+TSInstall go
+TSInstall gomod
+TSInstall gosum
+TSInstall gotmpl
+TSInstall lua
+TSInstall python
+TSInstall json
+TSInstall yaml
+TSInstall diff
+TSInstall bash
+TSInstall jq
+TSInstall make
+TSInstall toml
+
+### cmp
+
+### snippets
+
+### git
+gitsigns.nvim
+
+### diffview
+diffview.nvim
+
+### treeview
+neotree.nvim
