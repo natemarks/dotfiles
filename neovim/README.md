@@ -162,7 +162,8 @@ TSInstall toml
 ### snippets
 
 ### git
-gitsigns.nvim
+external lazygit
+
 
 ### diffview
 diffview.nvim
