@@ -172,9 +172,16 @@ packages: ## install required packages
 	heif-gdk-pixbuf;
 
 vscode: ## install vscode
-	bash scripts/install_vscode.sh
+	bash scripts/install_vscode.
 
-neovim: ## install neovim
+$(HOME)/.tmux/plugins/tpm: ## clone tmux-plugins
+	git clone https://github.com/tmux-plugins/tpm $(HOME)/.tmux/plugins/tpm
+
+
+$(HOME)/.tmux.conf: $(HOME)/.tmux/plugins/tpm ## configure tmux
+	$(LN) $(PRJ)/tmux/tmux.conf $(HOME)/.tmux.conf
+
+neovim: $(HOME)/.tmux.conf ## install neovim
 	bash scripts/install_neovim.sh
 	-rm -rf $(HOME)/.config/nvim
 	mkdir -p $(HOME)/.config/nvim/lua
