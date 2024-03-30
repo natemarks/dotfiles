@@ -57,6 +57,7 @@ return {
                     'bash',
                     'jq',
                     'make',
+                    'markdown',
                 },
                 highlight = { enable = true },
                 indent = { enable = true },
