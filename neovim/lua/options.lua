@@ -105,3 +105,7 @@ vim.opt.writebackup = false
 
 -- telescope settings
 vim.api.nvim_set_keymap('n', '<Leader>ff', ':Telescope find_files<CR>', {noremap = true})
+
+-- neo-tree.nvim settings
+-- open file system
+vim.api.nvim_set_keymap('n', '<Leader>t', ':Neotree filesystem reveal left<CR>', {noremap = true})
