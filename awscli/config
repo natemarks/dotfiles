@@ -30,11 +30,7 @@ sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
-[profile AdministratorAccess-JeffKleppinger]
-sso_start_url = https://imprivata.awsapps.com/start/#
-sso_region = us-east-1
-sso_account_id = 357655465940
-sso_role_name = AdministratorAccess
+[profile jklep-admin]
 region = us-east-1
 output = json
 
