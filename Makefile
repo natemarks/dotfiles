@@ -171,6 +171,8 @@ packages: ## install required packages
 	python3.8-venv \
 	postgresql-client \
 	xclip \
+	bat \
+	exa \
 	heif-gdk-pixbuf;
 
 vscode: ## install vscode
