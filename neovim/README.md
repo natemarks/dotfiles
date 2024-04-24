@@ -2,6 +2,10 @@
 
 https://github.com/nanotee/nvim-lua-guide
 
+Good resource for setting up neovim:
+https://github.com/tpope/vim-sensible
+
+
 ## key bindings and global config
 
 

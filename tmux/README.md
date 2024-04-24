@@ -3,6 +3,8 @@
 BLOCKED:
 tmux throws an errro trying to use site packages from pyenv to configure powerline.  I need to figure out how to get the correct python version to be used in the tmux configuration.
 
+good resource:
+https://github.com/tmux-plugins/tmux-sensible
 
 https://www.youtube.com/watch?v=U-omALWIBos
 
