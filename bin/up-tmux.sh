@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Check if the TMUX environment variable is set
+if [ -n "$TMUX" ]; then
+    echo "You are currently in a tmux session."
+    exit 0
+fi
+
 SESSION_NAME="daily"
 
 # Check if the tmux session exists
