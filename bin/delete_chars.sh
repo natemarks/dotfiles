@@ -13,5 +13,5 @@ n=$1
 file=$2
 
 # Use sed to delete the first n characters of each line
-sed "s/^.\{${n}\}//" "$file"
+sed -i "s/^.\{${n}\}//" "$file"
 
