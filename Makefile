@@ -65,6 +65,8 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/up-tmux.sh $(HOME)/bin/up-tmux.sh
 	-rm -f $(HOME)/bin/prune_grep.sh
 	$(LN) $(PRJ)/bin/prune_grep.sh $(HOME)/bin/prune_grep.sh
+	-rm -f $(HOME)/bin/delete_chars.sh
+	$(LN) $(PRJ)/bin/delete_chars.sh $(HOME)/bin/delete_chars.sh
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
