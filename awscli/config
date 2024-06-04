@@ -88,6 +88,10 @@ region = us-east-1
 output = json
 
 [profile i-platform-dev]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 151924297945
+sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
@@ -100,6 +104,10 @@ region = us-east-1
 output = json
 
 [profile production]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 468716396736
+sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
@@ -112,6 +120,10 @@ region = us-east-1
 output = json
 
 [profile imprivata-sandbox]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 709310380790
+sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
