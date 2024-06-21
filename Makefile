@@ -206,6 +206,9 @@ neovim: $(HOME)/.tmux.conf ## install neovim
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh
 
+ec2list: ## install ec2list
+	bash scripts/install_ec2list.sh
+
 ssh-config: ## ssh config
 	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config
 
