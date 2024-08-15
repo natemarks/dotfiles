@@ -148,3 +148,7 @@ sso_registration_scopes=sso:account:access
 sso_session=imprivata
 sso_account_id=709310380790
 sso_role_name=AdministratorAccess
+
+[profile deleteme20240801]
+region = us-east-1
+output = json
