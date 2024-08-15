@@ -42,4 +42,4 @@ alias cc_go='cookiecutter gh:natemarks/cookiecutter-golang'
 alias cc_py='cookiecutter gh:natemarks/cookiecutter-pypackage'
 alias txt_by_modified='find . -type f -maxdepth 1 -name "*.txt" -printf "%T@ %Tc %p\n" | sort -n'
 #print the unique file extensions in the current directory
-alias extensions='find . -type f -maxdepth 1 | sed -n 's/..*\.//p' | sort -u'
+alias extensions="find . -type f -maxdepth 1 | sed -n 's/..*\.//p' | sort -u"
