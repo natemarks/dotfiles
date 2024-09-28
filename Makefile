@@ -104,6 +104,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/terragrunt_aliases.sh  $(BASHRCD)/terragrunt_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/tmux_aliases.sh $(BASHRCD)/tmux_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/docker.sh $(BASHRCD)/docker.sh
+	$(LN) $(PRJ)/bashrc.d/kubectl_autocomplete.sh $(BASHRCD)/kubectl_autocomplete.sh
 	$(LN) $(PRJ)/bashrc.d/pyenv.sh $(BASHRCD)/pyenv.sh
 	-$(LN) $(PRJ)/bashrc.d/work_aliases.sh $(BASHRCD)/work_aliases.sh
 	sed -i.$(EPOCH) '/\.bashrc\.local/d' $(HOME)/.bashrc
