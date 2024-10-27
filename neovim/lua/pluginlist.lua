@@ -64,8 +64,9 @@ return {
             }
         end,
     },
-
-
+    {
+        'nvim-telescope/telescope-symbols.nvim',
+    },
     {
         'nvim-telescope/telescope.nvim',
         dependencies = { 'nvim-lua/plenary.nvim' }

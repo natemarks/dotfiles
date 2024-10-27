@@ -1,4 +1,15 @@
 # neovim config
+## Goals
+
+#
+
+ ** IMPORTANT: Install nerdfonts first **
+
+ scripts/install_nerdfonts.sh
+
+debug with AWS credentiasls
+
+
 
 https://github.com/nanotee/nvim-lua-guide
 
