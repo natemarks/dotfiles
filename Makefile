@@ -88,6 +88,7 @@ bash: ## configure bash environment
 	$(MKDIR) $(BASHRCD)
 	# some desc
 	$(LN) $(PRJ)/bashrc.d/add_home_bin_to_path.sh  $(BASHRCD)/add_home_bin_to_path.sh
+	$(LN) $(PRJ)/bashrc.d/neovim.sh  $(BASHRCD)/neovim.sh
 	$(LN) $(PRJ)/bashrc.d/aliases.sh  $(BASHRCD)/aliases.sh
 	$(LN) $(PRJ)/bashrc.d/aws_functions.sh $(BASHRCD)/aws_functions.sh
 	$(LN) $(PRJ)/bashrc.d/bash_functions.sh $(BASHRCD)/bash_functions.sh
