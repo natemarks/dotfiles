@@ -192,19 +192,17 @@ $(HOME)/.tmux/plugins/tpm: ## clone tmux-plugins
 $(HOME)/.tmux.conf: $(HOME)/.tmux/plugins/tpm ## configure tmux
 	$(LN) $(PRJ)/tmux/tmux.conf $(HOME)/.tmux.conf
 
+$(HOME)/.config/nvim: ## copy neovim config from dotfiles
+	bash scripts/reset_neovim.sh
+
+reset_neovim_config: $(HOME)/.tmux.conf ## delete and re-copy the neovim config file
+	-rm -rf $(HOME)/.config/nvim
+	-rm -rf $(HOME)/.local/share/nvim
+	@$(MAKE) $(HOME)/.config/nvim
+
 neovim: $(HOME)/.tmux.conf ## install neovim
 	bash scripts/install_neovim.sh
-	-rm -rf $(HOME)/.config/nvim
-	mkdir -p $(HOME)/.config/nvim/lua
-	mkdir -p $(HOME)/.config/nvim/after/plugin
-	$(LN) $(PRJ)/neovim/init.lua $(HOME)/.config/nvim/init.lua
-	$(LN) $(PRJ)/neovim/lua/options.lua $(HOME)/.config/nvim/lua/options.lua
-	$(LN) $(PRJ)/neovim/lua/plugins.lua $(HOME)/.config/nvim/lua/plugins.lua
-	$(LN) $(PRJ)/neovim/lua/pluginlist.lua $(HOME)/.config/nvim/lua/pluginlist.lua
-	$(LN) $(PRJ)/neovim/after/plugin/lsp.lua $(HOME)/.config/nvim/after/plugin/lsp.lua
-	$(LN) $(PRJ)/neovim/after/plugin/cmp.lua $(HOME)/.config/nvim/after/plugin/cmp.lua
-	$(LN) $(PRJ)/neovim/after/plugin/telescope.lua $(HOME)/.config/nvim/after/plugin/telescope.lua
-	$(LN) $(PRJ)/neovim/after/plugin/treesitter.lua $(HOME)/.config/nvim/after/plugin/treesitter.lua
+	@$(MAKE) reset_neovim_config
 
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh
