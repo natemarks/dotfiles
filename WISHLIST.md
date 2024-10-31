@@ -1,3 +1,6 @@
+python autocompletion:
+https://www.youtube.com/watch?v=4BnVeOUeZxc
+
 harpoon
 use neovim marks
 use black formatter in neovim buffer
