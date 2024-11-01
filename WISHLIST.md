@@ -1,4 +1,5 @@
 python autocompletion:
+https://www.youtube.com/watch?v=VljhZ0e9zGE
 https://www.youtube.com/watch?v=4BnVeOUeZxc
 
 harpoon

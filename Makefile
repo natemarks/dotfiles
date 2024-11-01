@@ -195,9 +195,11 @@ $(HOME)/.tmux.conf: $(HOME)/.tmux/plugins/tpm ## configure tmux
 $(HOME)/.config/nvim: ## copy neovim config from dotfiles
 	bash scripts/reset_neovim.sh
 
-reset_neovim_config: $(HOME)/.tmux.conf ## delete and re-copy the neovim config file
+delete_neovim: ## delete neovim config
 	-rm -rf $(HOME)/.config/nvim
 	-rm -rf $(HOME)/.local/share/nvim
+
+reset_neovim_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the neovim config file
 	@$(MAKE) $(HOME)/.config/nvim
 
 neovim: $(HOME)/.tmux.conf ## install neovim
