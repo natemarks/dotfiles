@@ -3,7 +3,7 @@ I am a neovim beginner, so I'm starting with the [lazyvim quick start](https://w
 
 ## Installation
 
-### preequisites
+### prerequisites
 install lua and luarocks first. They're required by the lazyvim package manager
 ```bash
 sudo ls
@@ -32,7 +32,7 @@ run the lazyvim starter script
 
 debug with AWS credentiasls
 
-
+run static checks on python code (black, mypy, lint, isort)
 
 https://github.com/nanotee/nvim-lua-guide
 
