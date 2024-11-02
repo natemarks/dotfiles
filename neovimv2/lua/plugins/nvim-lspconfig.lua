@@ -29,9 +29,8 @@ return {
         -- 'html', -- requires npm to be installed
         'lua_ls',
         -- 'jsonls', -- requires npm to be installed
-        'lemminx',
-        'marksman',
-        'quick_lint_js',
+        'pyright',
+        --'gopls',
         -- 'tsserver', -- requires npm to be installed
         -- 'yamlls', -- requires npm to be installed
       }

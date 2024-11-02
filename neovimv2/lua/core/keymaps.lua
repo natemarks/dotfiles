@@ -6,33 +6,33 @@ local keymap = vim.keymap
 -- Bind nohl
 -- Removes highlight of your last search
 -- ``<C>`` stands for ``CTRL`` and therefore ``<C-n>`` stands for ``CTRL+n``
-vim.api.nvim_set_keymap('n', '<C-n>', ':nohl<CR>', {noremap = true})
-vim.api.nvim_set_keymap('v', '<C-n>', ':nohl<CR>', {noremap = true})
-vim.api.nvim_set_keymap('i', '<C-n>', '<C-o>:nohl<CR>', {noremap = true})
+keymap.set('n', '<C-n>', ':nohl<CR>', {noremap = true})
+keymap.set('v', '<C-n>', ':nohl<CR>', {noremap = true})
+keymap.set('i', '<C-n>', '<C-o>:nohl<CR>', {noremap = true})
 
 -- Quicksave command
-vim.api.nvim_set_keymap('n', '<C-Z>', ':update<CR>', {noremap = true})
-vim.api.nvim_set_keymap('v', '<C-Z>', '<C-C>:update<CR>', {noremap = true})
-vim.api.nvim_set_keymap('i', '<C-Z>', '<C-O>:update<CR>', {noremap = true})
+keymap.set('n', '<C-Z>', ':update<CR>', {noremap = true})
+keymap.set('v', '<C-Z>', '<C-C>:update<CR>', {noremap = true})
+keymap.set('i', '<C-Z>', '<C-O>:update<CR>', {noremap = true})
 
 -- Quick quit command
-vim.api.nvim_set_keymap('n', '<Leader>e', ':quit<CR>', {noremap = true})  -- Quit current window
-vim.api.nvim_set_keymap('n', '<Leader>E', ':qa!<CR>', {noremap = true})   -- Quit all windows
+keymap.set('n', '<Leader>e', ':quit<CR>', {noremap = true})  -- Quit current window
+keymap.set('n', '<Leader>E', ':qa!<CR>', {noremap = true})   -- Quit all windows
 
 -- Bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
 -- Every unnecessary keystroke that can be saved is good for your health :)
-vim.api.nvim_set_keymap('n', '<C-j>', '<C-w>j', {noremap = true})
-vim.api.nvim_set_keymap('n', '<C-k>', '<C-w>k', {noremap = true})
-vim.api.nvim_set_keymap('n', '<C-l>', '<C-w>l', {noremap = true})
-vim.api.nvim_set_keymap('n', '<C-h>', '<C-w>h', {noremap = true})
+keymap.set('n', '<C-j>', '<C-w>j', {noremap = true})
+keymap.set('n', '<C-k>', '<C-w>k', {noremap = true})
+keymap.set('n', '<C-l>', '<C-w>l', {noremap = true})
+keymap.set('n', '<C-h>', '<C-w>h', {noremap = true})
 
 -- Easier moving between tabs
-vim.api.nvim_set_keymap('n', '<Leader>n', ':tabprevious<CR>', {noremap = true})
-vim.api.nvim_set_keymap('n', '<Leader>m', ':tabnext<CR>', {noremap = true})
+keymap.set('n', '<Leader>n', ':tabprevious<CR>', {noremap = true})
+keymap.set('n', '<Leader>m', ':tabnext<CR>', {noremap = true})
 
 -- Easier formatting of paragraphs
-vim.api.nvim_set_keymap('v', 'Q', 'gq', {noremap = true})
-vim.api.nvim_set_keymap('n', 'Q', 'gqap', {noremap = true})
+keymap.set('v', 'Q', 'gq', {noremap = true})
+keymap.set('n', 'Q', 'gqap', {noremap = true})
 
 
 -- Split window management

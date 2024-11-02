@@ -19,8 +19,6 @@ opt.autoindent = true
 opt.wrap = false
 
 -- Search Settings
-opt.ignorecase = true
-opt.smartcase = true
 opt.hlsearch = true
 opt.incsearch = true
 opt.ignorecase = true
@@ -61,3 +59,12 @@ opt.foldexpr = "nvim_treesitter#foldexpr()" -- Utilize Treesitter folds
 -- Useful settings
 opt.history = 700
 opt.undolevels = 700
+
+-- Disable backup and swap files
+-- They trigger too many events for file system watchers
+opt.backup = false
+opt.writebackup = false
+
+
+-- experimental
+-- vim.o.autoread = true
