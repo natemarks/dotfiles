@@ -192,15 +192,17 @@ $(HOME)/.tmux/plugins/tpm: ## clone tmux-plugins
 $(HOME)/.tmux.conf: $(HOME)/.tmux/plugins/tpm ## configure tmux
 	$(LN) $(PRJ)/tmux/tmux.conf $(HOME)/.tmux.conf
 
-$(HOME)/.config/nvim: ## copy neovim config from dotfiles
-	bash scripts/reset_neovim.sh
-
 delete_neovim: ## delete neovim config
 	-rm -rf $(HOME)/.config/nvim
 	-rm -rf $(HOME)/.local/share/nvim
 
 reset_neovim_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the neovim config file
-	@$(MAKE) $(HOME)/.config/nvim
+	mkdir -p $(HOME)/.config/nvim
+	cp -r $(PRJ)/neovim/* $(HOME)/.config/nvim
+
+reset_neovimv2_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the neovim config file
+	mkdir -p $(HOME)/.config/nvim
+	cp -r $(PRJ)/neovimv2/* $(HOME)/.config/nvim
 
 neovim: $(HOME)/.tmux.conf ## install neovim
 	bash scripts/install_neovim.sh
