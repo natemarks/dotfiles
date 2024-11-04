@@ -23,6 +23,7 @@ return {
       'make',
       'toml',
       'yaml',
+      'vim',
     },
   },
   config = function (_, opts)
