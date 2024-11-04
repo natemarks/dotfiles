@@ -67,4 +67,6 @@ opt.writebackup = false
 
 
 -- experimental
--- vim.o.autoread = true
+-- opt.scrolloff = 8
+-- opt.colorcolumn = "80"
+-- vim.o.autoread = true0"

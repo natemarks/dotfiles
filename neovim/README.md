@@ -54,9 +54,11 @@ Good resource for setting up neovim:
 https://github.com/tpope/vim-sensible
 
 ### future
+primeagean has a :m move command  mapping for dragging selected blockes up and down
 experiment with fugitive, lazygit, difview
 
 
+consider playing with lsp-zero. it seems to make LSP config pretty easy. The primeagen video uses it
 ## key bindings and global config
 
 
