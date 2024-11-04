@@ -1,9 +1,10 @@
 # neovim config
-I am a neovim beginner, so I'm starting with the [lazyvim quick start](https://www.lazyvim.org/installation).  I'm curious about LOTS of approaches, so I'm keeping those notes in the approach section at the end
+I started with [nvim-starter-kit](https://github.com/bcampolo/nvim-starter-kit) becuase the file organization seemed pretty accessible and it got me of fthe ground wiht LSP autocompletion.
+
 
 ## Installation
 
-### preequisites
+### prerequisites
 install lua and luarocks first. They're required by the lazyvim package manager
 ```bash
 sudo ls
@@ -32,7 +33,7 @@ run the lazyvim starter script
 
 debug with AWS credentiasls
 
-
+run static checks on python code (black, mypy, lint, isort)
 
 https://github.com/nanotee/nvim-lua-guide
 
