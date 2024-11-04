@@ -200,10 +200,6 @@ reset_neovim_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the 
 	mkdir -p $(HOME)/.config/nvim
 	cp -r $(PRJ)/neovim/* $(HOME)/.config/nvim
 
-reset_neovimv2_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the neovim config file
-	mkdir -p $(HOME)/.config/nvim
-	cp -r $(PRJ)/neovimv2/* $(HOME)/.config/nvim
-
 neovim: $(HOME)/.tmux.conf ## install neovim
 	bash scripts/install_neovim.sh
 	@$(MAKE) reset_neovim_config
