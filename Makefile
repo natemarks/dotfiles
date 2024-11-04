@@ -235,6 +235,10 @@ rm-ssh-config: ## remove gitconfig before replacing
 rm-gitconfig: ## remove gitconfig before replacing
 	-rm -f $(HOME)/.gitconfig
 
+undo_edits: ## the build process has to edit files. run this to put things back
+	git reset HEAD --hard
+	git clean -f
+
 remove-all: rm-bash rm-gpg rm-powerline rm-ssh-config rm-gitconfig ## destroy everything you love
 
 all: packages gpg powerline bash gitconfig ssh-config ## configure everything
