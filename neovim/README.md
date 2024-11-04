@@ -1,9 +1,6 @@
 # neovim config
 I started with [nvim-starter-kit](https://github.com/bcampolo/nvim-starter-kit) becuase the file organization seemed pretty accessible and it got me of fthe ground wiht LSP autocompletion.
 
-
-## Installation
-
 ### prerequisites
 install lua and luarocks first. They're required by the lazyvim package manager
 ```bash
@@ -16,29 +13,48 @@ install nerdfonts
 bash scripts/install_nerdfonts.sh
 ```
 
+## Installation
+
+'''bash
+make reset_neovim_config
+# in vim, run lazy sync, tsupdate and checkhealth. may have toi 
+# open and close vim a few times
+'''
 
 
-run the lazyvim starter script
+
+
 
 
 
 
 ## Goals
+I used this approach to get started. It checks these boxes:
+ - uses lazy nvim
 
-#
 
- ** IMPORTANT: Install nerdfonts first **
+ - uses treesitter for syntax highlighting where I DO NOT get it from LSP.
+ I use tresitter to highlight languase where I DO NOT care about autocompletion:
+ JSON, YAML, etc. If I want autocompletion, I get it from the LSP INSTEAD of treesitter
 
- scripts/install_nerdfonts.sh
+ - I use LSP where I care about autocompletion. Go, Python, etc,
+I use the pyright LSP server and gopls
+ - DOES NOT use null-ls which is deprecated
 
-debug with AWS credentiasls
+I decided to use make for formatting (black) because black.nvim requires pynvim in the project and I don't want extra junk
+I MAY use pylint, mypy, for linting in neovim beucase it can be a bit arduous to find the error line in the cli and then go hunting for it in vim.  It might be worthwhile to see them in line in real time
 
-run static checks on python code (black, mypy, lint, isort)
+
+I REALLY want debugging and pytest. I think this is nvim-dap-python which WILL require debugpy in my projects
+
 
 https://github.com/nanotee/nvim-lua-guide
 
 Good resource for setting up neovim:
 https://github.com/tpope/vim-sensible
+
+### future
+experiment with fugitive, lazygit, difview
 
 
 ## key bindings and global config
