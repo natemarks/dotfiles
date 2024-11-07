@@ -143,3 +143,6 @@ keymap.set("n", '<leader>de', function() require('telescope.builtin').diagnostic
 
 -- Gitsigns
 keymap.set("n", "<leader>vp", ":Gitsigns preview_hunk<CR>")
+
+-- Git
+keymap.set("n", "<leader>vd", ":Git difftool -y<CR>")
