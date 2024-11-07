@@ -141,3 +141,5 @@ keymap.set("n", '<leader>df', '<cmd>Telescope dap frames<cr>')
 keymap.set("n", '<leader>dh', '<cmd>Telescope dap commands<cr>')
 keymap.set("n", '<leader>de', function() require('telescope.builtin').diagnostics({default_text=":E:"}) end)
 
+-- Gitsigns
+keymap.set("n", "<leader>vp", ":Gitsigns preview_hunk<CR>")
