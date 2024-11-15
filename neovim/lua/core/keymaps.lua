@@ -94,14 +94,14 @@ wk.add({
     { "<leader>ha", require("harpoon.mark").add_file, desc = "Add File", mode = "n" },
     { "<leader>hh", require("harpoon.ui").toggle_quick_menu, desc = "Show UI", mode = "n" },
     { "<leader>h1", function() require("harpoon.ui").nav_file(1) end, desc = "Harpoon:1", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(2) end, desc = "Harpoon:2", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(3) end, desc = "Harpoon:3", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(4) end, desc = "Harpoon:4", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(5) end, desc = "Harpoon:5", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(6) end, desc = "Harpoon:6", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(7) end, desc = "Harpoon:7", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(8) end, desc = "Harpoon:8", mode = "n" },
-    { "<leader>h1", function() require("harpoon.ui").nav_file(9) end, desc = "Harpoon:9", mode = "n" },
+    { "<leader>h2", function() require("harpoon.ui").nav_file(2) end, desc = "Harpoon:2", mode = "n" },
+    { "<leader>h3", function() require("harpoon.ui").nav_file(3) end, desc = "Harpoon:3", mode = "n" },
+    { "<leader>h4", function() require("harpoon.ui").nav_file(4) end, desc = "Harpoon:4", mode = "n" },
+    { "<leader>h5", function() require("harpoon.ui").nav_file(5) end, desc = "Harpoon:5", mode = "n" },
+    { "<leader>h6", function() require("harpoon.ui").nav_file(6) end, desc = "Harpoon:6", mode = "n" },
+    { "<leader>h7", function() require("harpoon.ui").nav_file(7) end, desc = "Harpoon:7", mode = "n" },
+    { "<leader>h8", function() require("harpoon.ui").nav_file(8) end, desc = "Harpoon:8", mode = "n" },
+    { "<leader>h9", function() require("harpoon.ui").nav_file(9) end, desc = "Harpoon:9", mode = "n" },
 })
 
 
