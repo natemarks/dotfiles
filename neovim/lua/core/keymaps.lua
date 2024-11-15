@@ -146,3 +146,6 @@ keymap.set("n", "<leader>vp", ":Gitsigns preview_hunk<CR>")
 
 -- Git
 keymap.set("n", "<leader>vd", ":Git difftool -y<CR>")
+
+-- LazyGit
+keymap.set("n", "<leader>vv", ":LazyGit<CR>")
