@@ -65,7 +65,6 @@ opt.undolevels = 700
 opt.backup = false
 opt.writebackup = false
 
-
 -- experimental
 -- opt.scrolloff = 8
 -- opt.colorcolumn = "80"

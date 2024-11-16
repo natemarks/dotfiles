@@ -57,6 +57,9 @@ https://github.com/tpope/vim-sensible
 primeagean has a :m move command  mapping for dragging selected blockes up and down
 experiment with fugitive, lazygit, difview
 
+people seem to like the mini plugins. right now I'm just using mini.surround
+https://github.com/echasnovski/mini.nvim
+
 
 consider playing with lsp-zero. it seems to make LSP config pretty easy. The primeagen video uses it
 ## key bindings and global config
