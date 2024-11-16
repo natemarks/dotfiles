@@ -31,7 +31,7 @@ return {
         -- 'jsonls', -- requires npm to be installed
         'pyright',
         'debugpy',
-        --'gopls',
+        'gopls',
         -- 'tsserver', -- requires npm to be installed
         -- 'yamlls', -- requires npm to be installed
       }
