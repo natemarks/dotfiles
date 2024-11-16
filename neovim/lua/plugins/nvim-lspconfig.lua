@@ -30,6 +30,7 @@ return {
         'lua_ls',
         -- 'jsonls', -- requires npm to be installed
         'pyright',
+        'debugpy',
         --'gopls',
         -- 'tsserver', -- requires npm to be installed
         -- 'yamlls', -- requires npm to be installed
