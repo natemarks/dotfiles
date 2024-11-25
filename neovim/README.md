@@ -261,6 +261,8 @@ use harpoon to bookmark files for opening
 ? I think there's a way to autocomplete/display kepymaps in neovim. I want to do that. I think it's in the lazyvim recommended video (whichkey?)
 ? should I try lazygit plugin?
 ## primeagen
+https://github.com/nvim-lua/kickstart.nvim
+
 https://www.youtube.com/watch?v=w7i4amO_zaE&t=953s
 he uses lsp-zero too
 I really want todig into his remaps and settings. relative line numbers , incremental search, etc.
