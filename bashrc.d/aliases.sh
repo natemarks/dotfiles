@@ -12,6 +12,7 @@ alias cdh='cd $(find ~ -maxdepth 1 -type d | fzf)'
 alias cdp='cd $(find ~/projects -maxdepth 2 -type d | fzf)'
 alias cdpp='cd ~/projects'
 alias cdd='cd ~/Downloads'
+alias cdnv='cd ~/.config/nvim/'
 # ~/go/... is a part of the deprecated GOPATH config superceded by go modules
 # https://insujang.github.io/2020-04-04/go-modules/
 # alias cdp='cd $(find ~/projects ~/go/src -maxdepth 2 -type d | fzf)'
