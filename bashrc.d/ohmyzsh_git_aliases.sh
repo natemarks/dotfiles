@@ -552,7 +552,7 @@ alias gsts='git stash show --text'
 alias gstu='gsta --include-untracked'
 alias gstall='git stash --all'
 alias gsu='git submodule update'
-alias gsw='git switch'
+alias gsw='git switch $(git branch --format="%(refname:short)" | fzf)'
 alias gswc='git switch -c'
 
 alias gts='git tag -s'
