@@ -136,7 +136,8 @@ shellcheck: ## shellcheck project files. skip ohmyzsh_git_aliases.sh file
 	shellcheck --format=gcc bin/decrypt
 
 packages: ## install required packages
-    # dconf/uuid for gogh colors
+	sudo add-apt-repository -y ppa:git-core/ppa;
+	sudo apt-get -y update;
 	sudo apt-get install -y \
 	curl \
 	git \
