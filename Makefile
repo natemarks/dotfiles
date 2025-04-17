@@ -20,7 +20,7 @@ help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 nodejs: ## Install NodeJS
-	curl -sL https://deb.nodesource.com/setup_18.x | sudo bash -;
+	curl -sL https://deb.nodesource.com/setup_22.x | sudo bash -;
 	sudo apt -y install nodejs
 
 spotify: ## Install spotify repo and package
