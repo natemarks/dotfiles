@@ -83,6 +83,14 @@ sso_role_name = AdministratorAccess
 region = us-east-2
 output = json
 
+[profile pcm_sandbox]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 014160138715
+sso_role_name = AdministratorAccess
+region = us-east-1
+output = json
+
 [profile impr-it]
 region = us-east-1
 output = json

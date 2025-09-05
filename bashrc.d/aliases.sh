@@ -26,6 +26,7 @@ alias aws_imprivata-sandbox='export AWS_PROFILE=imprivata-sandbox && aws sso log
 alias aws_sandbox='export AWS_PROFILE=imprivata-sandbox && aws sso login'
 alias aws_platform-dev='export AWS_PROFILE=i-platform-dev && aws sso login'
 alias aws_production='export AWS_PROFILE=production && aws sso login'
+alias aws_pcm='export AWS_PROFILE=pcm_sandbox && aws sso login'
 alias aws_csva='export AWS_PROFILE=customersupport-va'
 alias aws_imprivata-nmarks='export AWS_PROFILE=imprivata-nmarks'
 alias aws_imprivata_it='export AWS_PROFILE=ImprivataIT-749607070042'
