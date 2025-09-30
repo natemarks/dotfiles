@@ -103,6 +103,30 @@ sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
+[profile nonprod-archive]
+sso_start_url = https://imprivata-non-product.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 588436839923
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = json
+
+[profile prod-archive]
+sso_start_url = https://imprivata.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 893256823091
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = json
+
+[profile nonprod-eam-ami]
+sso_start_url = https://imprivata-non-product.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 601440148950
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = json
+
 [profile personal]
 region = us-east-1
 output = json
