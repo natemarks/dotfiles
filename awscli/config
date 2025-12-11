@@ -63,7 +63,7 @@ sso_start_url = https://imprivata.awsapps.com/start/#
 sso_region = us-east-1
 sso_account_id = 183679576862
 sso_role_name = AdministratorAccess
-region = us-east-1
+region = us-east-2
 output = json
 
 [profile bi-test-538263340534]
