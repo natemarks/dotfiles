@@ -233,4 +233,9 @@ https://askubuntu.com/questions/990580/errors-installing-zoom-conferencing
 
 ### neovim
 
+I had to compile neovim to get 0.11.6 to run on ubuntu 20.04. I aved the tarball here:
+s3://com.imprivata.151924297945.us-east-1.devops-artifacts/neovim/neovim_0.11.6_ubuntu-20.04-linux-x86_64.tar.gz
+
+it should extract to ~/local/. I link ~/bin/nv to ~/local/nvim/bin/nvim and I have a bash alias for 'vim' that runs nv
+
 https://raw.githubusercontent.com/mbrochh/vim-as-a-python-ide/master/.vimrc
