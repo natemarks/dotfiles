@@ -10,3 +10,6 @@
 [user]
 	name = Nate Marks
 	email = nmarks@imprivata.com
+[credential]
+	helper = !aws codecommit credential-helper $@
+	UseHttpPath = true
