@@ -135,6 +135,14 @@ sso_role_name = AWSAdministratorAccess
 region = us-east-1
 output = json
 
+[profile nonprod-audit]
+sso_start_url = https://imprivata-non-product.awsapps.com/start/#
+sso_region = us-east-1
+sso_account_id = 707336479282
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = json
+
 [profile nonprod-archive]
 sso_start_url = https://imprivata-non-product.awsapps.com/start/#
 sso_region = us-east-1
