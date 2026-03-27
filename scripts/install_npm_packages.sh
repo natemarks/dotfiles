@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-npm install tree-sitter-cli
+sudo npm install -g tree-sitter-cli
 
