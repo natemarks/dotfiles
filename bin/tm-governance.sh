@@ -30,10 +30,10 @@ create_window() {
   local dir="$3"
   local cmd="$4"
 
+  tmux new-window -t "${SESSION_NAME}:${idx}" -n "$name" -c "$dir"
+
   if [ -n "$cmd" ]; then
-    tmux new-window -t "${SESSION_NAME}:${idx}" -n "$name" -c "$dir" "$cmd"
-  else
-    tmux new-window -t "${SESSION_NAME}:${idx}" -n "$name" -c "$dir"
+    tmux send-keys -t "${SESSION_NAME}:${idx}" "$cmd" C-m
   fi
 }
 
