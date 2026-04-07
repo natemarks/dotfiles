@@ -40,7 +40,10 @@ create_window() {
 # Create the session if needed
 if ! session_exists; then
   IFS='|' read -r idx name dir cmd <<< "${WINDOWS[0]}"
-  create_window "$idx" "$name" "$dir" "$cmd"
+  tmux new-session -d -s "$SESSION_NAME" -n "$name" -c "$dir"
+  if [ -n "$cmd" ]; then
+    tmux send-keys -t "${SESSION_NAME}:${idx}" "$cmd" C-m
+  fi
 fi
 
 # Repair any missing windows
