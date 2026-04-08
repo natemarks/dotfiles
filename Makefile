@@ -182,8 +182,14 @@ packages: ## install required packages
 	postgresql-client \
 	xclip \
 	bat \
-	exa \
-	heif-gdk-pixbuf;
+	heif-gdk-pixbuf \
+	ffmpeg \
+	p7zip-full \
+	p7zip-rar \
+	poppler-utils \
+	fd-find \
+	imagemagick \
+	;
 
 vscode: ## install vscode
 	bash scripts/install_vscode.
