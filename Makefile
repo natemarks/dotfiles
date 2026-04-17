@@ -93,6 +93,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/rustup_path.sh  $(BASHRCD)/rustup_path.sh
 	$(LN) $(PRJ)/bashrc.d/neovim.sh  $(BASHRCD)/neovim.sh
 	$(LN) $(PRJ)/bashrc.d/aliases.sh  $(BASHRCD)/aliases.sh
+	$(LN) $(PRJ)/bashrc.d/keys_env.sh $(BASHRCD)/keys_env.sh
 	$(LN) $(PRJ)/bashrc.d/aws_functions.sh $(BASHRCD)/aws_functions.sh
 	$(LN) $(PRJ)/bashrc.d/bash_functions.sh $(BASHRCD)/bash_functions.sh
 	$(LN) $(PRJ)/bashrc.d/bash_powerline.sh $(BASHRCD)/bash_powerline.sh
