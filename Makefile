@@ -104,6 +104,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/go.sh $(BASHRCD)/go.sh
 	$(LN) $(PRJ)/bashrc.d/ohmyzsh_git_aliases.sh  $(BASHRCD)/ohmyzsh_git_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/packer.sh $(BASHRCD)/packer.sh
+	$(LN) $(PRJ)/bashrc.d/zoxide.sh $(BASHRCD)/zoxide.sh
 	$(LN) $(PRJ)/bashrc.d/ssh_aliases.sh $(BASHRCD)/ssh_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/temp_aliases.sh  $(BASHRCD)/temp_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/terragrunt_aliases.sh  $(BASHRCD)/terragrunt_aliases.sh
