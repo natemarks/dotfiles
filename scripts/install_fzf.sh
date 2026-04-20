@@ -7,9 +7,12 @@ PLATFORM="linux_amd64"
 EXECUTABLE="fzf"
 ARCHIVE="${EXECUTABLE}-${VERSION}-${PLATFORM}.tar.gz"
 URL="https://github.com/junegunn/fzf/releases/download/v${VERSION}/${ARCHIVE}"
+DOC_URL="https://raw.githubusercontent.com/junegunn/fzf/master/doc/fzf.txt"
 
 INSTALL_DIR="${HOME}/bin"
 INSTALL_PATH="${INSTALL_DIR}/${EXECUTABLE}"
+DOC_INSTALL_DIR="/usr/share/doc/fzf"
+DOC_INSTALL_PATH="${DOC_INSTALL_DIR}/fzf.txt"
 
 HELPER_SCRIPTS=(
   "https://raw.githubusercontent.com/junegunn/fzf/master/bin/fzf-preview.sh"
@@ -92,3 +95,25 @@ for script_url in "${HELPER_SCRIPTS[@]}"; do
   script_name="$(basename "${script_url}")"
   install_from_url "${script_url}" "${script_name}"
 done
+
+doc_tmp_path="${tmpdir}/fzf.txt"
+
+if [[ -f "${DOC_INSTALL_PATH}" && "${overwrite}" != true ]]; then
+  echo "fzf.txt already exists at ${DOC_INSTALL_PATH}. Use --overwrite to reinstall."
+else
+  echo "Downloading ${DOC_URL}"
+  curl -fsSL "${DOC_URL}" -o "${doc_tmp_path}"
+
+  if [[ -w "${DOC_INSTALL_DIR}" || ( ! -e "${DOC_INSTALL_DIR}" && -w "$(dirname "${DOC_INSTALL_DIR}")" ) ]]; then
+    mkdir -p "${DOC_INSTALL_DIR}"
+    install -m 0644 "${doc_tmp_path}" "${DOC_INSTALL_PATH}"
+  elif command -v sudo >/dev/null 2>&1; then
+    sudo mkdir -p "${DOC_INSTALL_DIR}"
+    sudo install -m 0644 "${doc_tmp_path}" "${DOC_INSTALL_PATH}"
+  else
+    echo "ERROR: cannot write to ${DOC_INSTALL_DIR}. Re-run as root or install sudo." >&2
+    exit 1
+  fi
+
+  echo "Installed fzf.txt to ${DOC_INSTALL_PATH}"
+fi
