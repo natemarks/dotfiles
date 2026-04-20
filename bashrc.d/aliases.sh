@@ -10,6 +10,7 @@ alias do_prune_everything='docker system prune -a'
 
 alias cdh='cd $(find ~ -maxdepth 1 -type d | fzf)'
 alias cdp='cd $(find ~/projects -maxdepth 1 -type d | fzf) && safe_git_pull.sh'
+alias zdp='z $(find ~/projects -maxdepth 1 -type d | fzf) && safe_git_pull.sh'
 alias cdpp='cd ~/projects'
 alias cdd='cd ~/Downloads'
 alias cdnv='cd ~/.config/nvim/'
