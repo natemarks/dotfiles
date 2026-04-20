@@ -151,7 +151,6 @@ packages: ## install required packages
 	zip \
 	unzip \
 	seahorse-nautilus \
-	fzf \
 	ripgrep \
 	silversearcher-ag \
 	jq \
