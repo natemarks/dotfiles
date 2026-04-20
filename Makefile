@@ -241,6 +241,13 @@ rm-ssh-config: ## remove gitconfig before replacing
 rm-gitconfig: ## remove gitconfig before replacing
 	-rm -f $(HOME)/.gitconfig
 
+rm-sesh: ## remove sesh config before replacing
+	-rm -rf $(HOME)/.config/sesh
+
+$(HOME)/.config/sesh/sesh.toml: ## configure sesh
+	$(MKDIR) -p $(HOME)/.config/sesh
+	$(LN) $(PRJ)/sesh/sesh.toml  $(HOME)/.config/sesh/sesh.toml
+
 undo_edits: ## the build process has to edit files. run this to put things back
 	git reset HEAD --hard
 	git clean -f
