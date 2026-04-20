@@ -12,11 +12,16 @@ DOC_URL="https://raw.githubusercontent.com/junegunn/fzf/master/doc/fzf.txt"
 INSTALL_DIR="${HOME}/bin"
 INSTALL_PATH="${INSTALL_DIR}/${EXECUTABLE}"
 DOC_INSTALL_DIR="/usr/share/doc/fzf"
-DOC_INSTALL_PATH="${DOC_INSTALL_DIR}/fzf.txt"
 
 HELPER_SCRIPTS=(
   "https://raw.githubusercontent.com/junegunn/fzf/master/bin/fzf-preview.sh"
   "https://raw.githubusercontent.com/junegunn/fzf/master/bin/fzf-tmux"
+)
+
+DOC_SHELL_ASSETS=(
+  "common.sh|https://raw.githubusercontent.com/junegunn/fzf/master/shell/common.sh"
+  "completion.bash|https://raw.githubusercontent.com/junegunn/fzf/master/shell/completion.bash"
+  "key-bindings.bash|https://raw.githubusercontent.com/junegunn/fzf/master/shell/key-bindings.bash"
 )
 
 overwrite=false
@@ -79,6 +84,34 @@ install_from_url() {
   echo "Installed ${destination_name} to ${destination_path}"
 }
 
+install_doc_from_url() {
+  local source_url="$1"
+  local destination_name="$2"
+  local destination_path="${DOC_INSTALL_DIR}/${destination_name}"
+  local doc_tmp_path="${tmpdir}/${destination_name}"
+
+  if [[ -f "${destination_path}" && "${overwrite}" != true ]]; then
+    echo "${destination_name} already exists at ${destination_path}. Use --overwrite to reinstall."
+    return 0
+  fi
+
+  echo "Downloading ${source_url}"
+  curl -fsSL "${source_url}" -o "${doc_tmp_path}"
+
+  if [[ -w "${DOC_INSTALL_DIR}" || ( ! -e "${DOC_INSTALL_DIR}" && -w "$(dirname "${DOC_INSTALL_DIR}")" ) ]]; then
+    mkdir -p "${DOC_INSTALL_DIR}"
+    install -m 0644 "${doc_tmp_path}" "${destination_path}"
+  elif command -v sudo >/dev/null 2>&1; then
+    sudo mkdir -p "${DOC_INSTALL_DIR}"
+    sudo install -m 0644 "${doc_tmp_path}" "${destination_path}"
+  else
+    echo "ERROR: cannot write to ${DOC_INSTALL_DIR}. Re-run as root or install sudo." >&2
+    exit 1
+  fi
+
+  echo "Installed ${destination_name} to ${destination_path}"
+}
+
 if [[ -f "${INSTALL_PATH}" && "${overwrite}" != true ]]; then
   echo "${EXECUTABLE} already installed at ${INSTALL_PATH}. Use --overwrite to reinstall."
 else
@@ -96,24 +129,10 @@ for script_url in "${HELPER_SCRIPTS[@]}"; do
   install_from_url "${script_url}" "${script_name}"
 done
 
-doc_tmp_path="${tmpdir}/fzf.txt"
+install_doc_from_url "${DOC_URL}" "fzf.txt"
 
-if [[ -f "${DOC_INSTALL_PATH}" && "${overwrite}" != true ]]; then
-  echo "fzf.txt already exists at ${DOC_INSTALL_PATH}. Use --overwrite to reinstall."
-else
-  echo "Downloading ${DOC_URL}"
-  curl -fsSL "${DOC_URL}" -o "${doc_tmp_path}"
-
-  if [[ -w "${DOC_INSTALL_DIR}" || ( ! -e "${DOC_INSTALL_DIR}" && -w "$(dirname "${DOC_INSTALL_DIR}")" ) ]]; then
-    mkdir -p "${DOC_INSTALL_DIR}"
-    install -m 0644 "${doc_tmp_path}" "${DOC_INSTALL_PATH}"
-  elif command -v sudo >/dev/null 2>&1; then
-    sudo mkdir -p "${DOC_INSTALL_DIR}"
-    sudo install -m 0644 "${doc_tmp_path}" "${DOC_INSTALL_PATH}"
-  else
-    echo "ERROR: cannot write to ${DOC_INSTALL_DIR}. Re-run as root or install sudo." >&2
-    exit 1
-  fi
-
-  echo "Installed fzf.txt to ${DOC_INSTALL_PATH}"
-fi
+for doc_asset in "${DOC_SHELL_ASSETS[@]}"; do
+  doc_name="${doc_asset%%|*}"
+  doc_url="${doc_asset#*|}"
+  install_doc_from_url "${doc_url}" "${doc_name}"
+done
