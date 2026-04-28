@@ -19,3 +19,8 @@ path = "~/projects/dotfiles"
 startup_command = "dev_setup"
 
 
+[[session]]
+name = "findings automation "
+path = "~/projects/findings-automation"
+startup_command = "dev_setup"
+
