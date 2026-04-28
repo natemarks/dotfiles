@@ -7,3 +7,15 @@ dir_length = 3
 name = "Downloads 📥"
 path = "~/Downloads"
 startup_command = "ls"
+
+[[session]]
+name = "aws-governance "
+path = "~/projects/aws-governance"
+startup_command = "dev_setup"
+
+[[session]]
+name = "Dotfiles ⚙️"
+path = "~/projects/dotfiles"
+startup_command = "dev_setup"
+
+

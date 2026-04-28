@@ -54,7 +54,7 @@ Source files: `bashrc.d/*.sh` (20+ files)
 `bin/` contains GPG wrapper scripts (encrypt/decrypt), AWS helper scripts, and git utilities that get symlinked to `$HOME/bin`.
 
 ### Configuration Files
-- **tmux**: Custom config with CTRL-a prefix, split keybindings, TPM plugin manager
+- **tmux**: Custom config with CTRL-] prefix, split keybindings, TPM plugin manager, session persistence with tmux-resurrect and tmux-continuum
 - **sesh**: Session manager config in `sesh/sesh.toml`
 - **powerline**: Custom colorschemes and themes
 - **neovim**: Config copied (not symlinked) to `$HOME/.config/nvim/`
@@ -69,11 +69,20 @@ Source files: `bashrc.d/*.sh` (20+ files)
 
 ## tmux Keybindings
 
-Prefix: `CTRL-a`
-- `C-a |` - split vertically
-- `C-a -` - split horizontally  
-- `C-a s` - list sessions
-- `C-a m` - toggle maximize pane
-- `C-a j/k/h/l` - expand pane down/up/left/right
-- `C-a I` - install TPM plugins
-- `C-a U` - update TPM plugins
+Prefix: `CTRL-]`
+- `C-] |` - split vertically
+- `C-] -` - split horizontally  
+- `C-] s` - list sessions
+- `C-] t` - interactive sesh session selector (fzf with filters: ^a all, ^t tmux, ^g configs, ^x zoxide, ^d kill, ^f find)
+- `C-] m` - toggle maximize pane
+- `C-] j/k/h/l` - expand pane down/up/left/right
+- `C-] r` - reload tmux.conf
+- `C-] I` - install TPM plugins
+- `C-] U` - update TPM plugins
+- `C-] C-s` - save session (tmux-resurrect)
+- `C-] C-r` - restore session (tmux-resurrect)
+
+### Session Persistence
+- **tmux-resurrect**: Manual save/restore with `C-] C-s` and `C-] C-r`
+- **tmux-continuum**: Automatic saves every 15 minutes, auto-restore on tmux start
+- Captures pane contents and neovim sessions
