@@ -19,6 +19,11 @@ LNF = ln -vsf
 help: ## Show this help.
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
+configure_npm: ## configure npm to use a different bin and cache directory
+	$(MKDIR) $(HOME)/.npm-global
+	npm config set cache $(HOME)/.npm-global
+	npm config set prefix '~/.npm-global'
+
 nodejs: ## Install NodeJS
 	curl -sL https://deb.nodesource.com/setup_22.x | sudo bash -;
 	sudo apt -y install nodejs
@@ -28,7 +33,7 @@ spotify: ## Install spotify repo and package
 	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list;
 	sudo apt-get update && sudo apt-get install -y spotify-client
 
-aws_cdk: nodejs ## Install AWS CDK
+aws_cdk: nodejs configure_npm ## Install AWS CDK
 	sudo npm install -g aws-cdk
 
 pyenv: ## install pyenv
@@ -102,6 +107,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/git_aliases.sh $(BASHRCD)/git_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/git_functions.sh $(BASHRCD)/git_functions.sh
 	$(LN) $(PRJ)/bashrc.d/go.sh $(BASHRCD)/go.sh
+	$(LN) $(PRJ)/bashrc.d/npm.sh $(BASHRCD)/npm.sh
 	$(LN) $(PRJ)/bashrc.d/ohmyzsh_git_aliases.sh  $(BASHRCD)/ohmyzsh_git_aliases.sh
 	$(LN) $(PRJ)/bashrc.d/packer.sh $(BASHRCD)/packer.sh
 	$(LN) $(PRJ)/bashrc.d/zoxide.sh $(BASHRCD)/zoxide.sh
@@ -213,6 +219,9 @@ reset_neovim_config: $(HOME)/.tmux.conf delete_neovim ## delete and re-copy the 
 neovim: $(HOME)/.tmux.conf ## install neovim
 	bash scripts/install_neovim.sh
 	@$(MAKE) reset_neovim_config
+
+claude: nodejs configure_npm ## install claude ode
+	npm install -g @anthropic-ai/claude-code
 
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh
