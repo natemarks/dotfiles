@@ -24,3 +24,8 @@ name = "findings automation "
 path = "~/projects/findings-automation"
 startup_command = "dev_setup"
 
+[[session]]
+name = "cdk-hybrid-environments "
+path = "~/projects/cdk-hybrid-environments"
+startup_command = "dev_setup"
+
