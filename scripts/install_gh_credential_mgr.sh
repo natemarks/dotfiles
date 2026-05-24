@@ -3,7 +3,7 @@ set -Eeuo pipefail
 
 # https://github.com/git-ecosystem/git-credential-manager/releases
 VERSION="2.8.0"
-PACKAGE="gcm-linux_amd64.${VERSION}.deb"
+PACKAGE="gcm-linux-x64-${VERSION}.deb"
 URL="https://github.com/git-ecosystem/git-credential-manager/releases/download/v${VERSION}/${PACKAGE}"
 
 if [ $# -eq 1 ] && [ "$1" = "delete" ]; then

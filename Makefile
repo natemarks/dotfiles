@@ -118,6 +118,7 @@ bash: ## configure bash environment
 	$(LN) $(PRJ)/bashrc.d/docker.sh $(BASHRCD)/docker.sh
 	$(LN) $(PRJ)/bashrc.d/kubectl_autocomplete.sh $(BASHRCD)/kubectl_autocomplete.sh
 	$(LN) $(PRJ)/bashrc.d/pyenv.sh $(BASHRCD)/pyenv.sh
+	$(LN) $(PRJ)/bashrc.d/gh_cred_mgr.sh $(BASHRCD)/gh_cred_mgr.sh
 	-$(LN) $(PRJ)/bashrc.d/work_aliases.sh $(BASHRCD)/work_aliases.sh
 	sed -i.$(EPOCH) '/\.bashrc\.local/d' $(HOME)/.bashrc
 	echo '. $(HOME)/.bashrc.local' >> $(HOME)/.bashrc
@@ -225,6 +226,9 @@ claude: nodejs configure_npm ## install claude ode
 
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh
+
+gh-credential-manager: ## install git credential manager
+	bash scripts/install_gh_credential_mgr.sh
 
 ec2list: ## install ec2list
 	bash scripts/install_ec2list.sh

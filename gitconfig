@@ -13,5 +13,10 @@
 [credential]
 	helper = !aws codecommit credential-helper $@
 	UseHttpPath = true
+	helper = 
+	helper = /usr/local/bin/git-credential-manager
+	credentialStore = secretservice
 [push]
 	autoSetupRemote = true
+[credential "https://dev.azure.com"]
+	useHttpPath = true
