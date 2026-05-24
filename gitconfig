@@ -3,8 +3,6 @@
 [core]
         autocrlf = input
 	editor = nv
-[url "ssh://git@github.com/"]
-        insteadOf = https://github.com/
 [fetch]
         prune = true
 [user]

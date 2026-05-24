@@ -74,6 +74,10 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/ec2_session.sh $(HOME)/bin/ec2_session.sh
 	-rm -f $(HOME)/bin/safe_git_pull.sh
 	$(LN) $(PRJ)/bin/safe_git_pull.sh $(HOME)/bin/safe_git_pull.sh
+	-rm -f $(HOME)/bin/git_ssh_to_https.sh
+	$(LN) $(PRJ)/bin/git_ssh_to_https.sh $(HOME)/bin/git_ssh_to_https.sh
+	-rm -f $(HOME)/bin/create_ssh_key.sh
+	$(LN) $(PRJ)/bin/create_ssh_key.sh $(HOME)/bin/create_ssh_key.sh
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
