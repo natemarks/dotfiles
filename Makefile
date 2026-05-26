@@ -213,6 +213,7 @@ packages: ## install required packages
 	poppler-utils \
 	fd-find \
 	imagemagick \
+	apache2-utils \
 	;
 
 vscode: ## install vscode
