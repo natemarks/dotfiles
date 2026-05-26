@@ -74,7 +74,6 @@ Prefix: `CTRL-]`
 - `C-] -` - split horizontally  
 - `C-] s` - list sessions
 - `C-] t` - interactive sesh session selector (fzf with filters: ^a all, ^t tmux, ^g configs, ^x zoxide, ^d kill, ^f find)
-- `C-] T` - dev setup: select project from ~/projects, create/switch to session with editor (neovim) and claude windows
 - `C-] m` - toggle maximize pane
 - `C-] j/k/h/l` - expand pane down/up/left/right
 - `C-] r` - reload tmux.conf
