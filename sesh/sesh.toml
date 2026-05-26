@@ -11,21 +11,17 @@ startup_command = "ls"
 [[session]]
 name = "aws-governance "
 path = "~/projects/aws-governance"
-startup_command = "dev_setup"
 
 [[session]]
 name = "Dotfiles ⚙️"
 path = "~/projects/dotfiles"
-startup_command = "dev_setup"
 
 
 [[session]]
 name = "findings automation "
 path = "~/projects/findings-automation"
-startup_command = "dev_setup"
 
 [[session]]
 name = "cdk-hybrid-environments "
 path = "~/projects/cdk-hybrid-environments"
-startup_command = "dev_setup"
 
