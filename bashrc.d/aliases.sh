@@ -61,3 +61,4 @@ alias txt_by_modified='find . -type f -maxdepth 1 -name "*.txt" -printf "%T@ %Tc
 alias extensions="find . -type f -maxdepth 1 | sed -n 's/..*\.//p' | sort -u"
 alias ff="yazi"
 alias pkzoom="pkill zoom"
+alias whisper='whisper-stream -c 2'
