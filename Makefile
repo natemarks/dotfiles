@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: gitconfig vim powerline neovim bin
+.PHONY: gitconfig vim powerline neovim bin whisper whisper-clean
 DEFAULT_BRANCH := main
 SHELL := /bin/bash
 PRJ := $(PWD)
@@ -78,6 +78,16 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/git_ssh_to_https.sh $(HOME)/bin/git_ssh_to_https.sh
 	-rm -f $(HOME)/bin/create_ssh_key.sh
 	$(LN) $(PRJ)/bin/create_ssh_key.sh $(HOME)/bin/create_ssh_key.sh
+	-rm -f $(HOME)/bin/t-kill
+	$(LN) $(PRJ)/bin/t-kill $(HOME)/bin/t-kill
+	@if [ -f $(PRJ)/bin/whisper-stream-wrapper.sh ]; then \
+		rm -f $(HOME)/bin/whisper-stream; \
+		$(LN) $(PRJ)/bin/whisper-stream-wrapper.sh $(HOME)/bin/whisper-stream; \
+	fi
+	@if [ -d $(PRJ)/bin/models ]; then \
+		rm -rf $(HOME)/bin/models; \
+		$(LN) $(PRJ)/bin/models $(HOME)/bin/models; \
+	fi
 
 $(HOME)/tmp: ## make sure $HOME/tmp
 	$(MKDIR) $(HOME)/tmp
@@ -172,6 +182,8 @@ packages: ## install required packages
 	shellcheck \
 	hunspell \
 	build-essential \
+	cmake \
+	libsdl2-dev \
 	libssl-dev \
 	zlib1g-dev \
 	libbz2-dev \
@@ -236,6 +248,17 @@ gh-credential-manager: ## install git credential manager
 
 ec2list: ## install ec2list
 	bash scripts/install_ec2list.sh
+
+bin/whisper-stream-bin: ## install whisper.cpp (whisper-stream for voice transcription)
+	bash scripts/install_whisper.sh
+
+whisper: bin/whisper-stream-bin ## convenience target for whisper installation
+
+whisper-clean: ## remove whisper.cpp installation
+	bash scripts/install_whisper.sh delete
+	-rm -f bin/whisper-stream-bin
+	-rm -f bin/whisper-stream-wrapper.sh
+	-rm -f $(HOME)/bin/whisper-stream
 
 ssh-config: ## ssh config
 	$(LN) $(PRJ)/ssh/config  $(HOME)/.ssh/config
