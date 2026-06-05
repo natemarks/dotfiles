@@ -9,12 +9,14 @@
 	name = Nate Marks
 	email = nmarks@imprivata.com
 [credential]
-	helper = !aws codecommit credential-helper $@
-	UseHttpPath = true
-	helper = 
 	helper = /usr/local/bin/git-credential-manager
 	credentialStore = secretservice
+	UseHttpPath = true
 [push]
 	autoSetupRemote = true
 [credential "https://dev.azure.com"]
 	useHttpPath = true
+[credential "https://git-codecommit.*.amazonaws.com"]
+	helper = !aws codecommit credential-helper $@
+[credential "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/ImprLza01-config"]
+	provider = generic
