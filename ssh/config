@@ -1,3 +1,11 @@
+# Personal GitHub account (natemarks)
+Host github-natemarks
+  HostName github.com
+  IdentityFile ~/.ssh/natemarks
+  IdentitiesOnly yes
+  AddKeysToAgent yes
+
+# Work GitHub account (default)
 Host github.com
   HostName github.com
   IdentityFile ~/.ssh/nmarks_imprivata
