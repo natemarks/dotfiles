@@ -39,7 +39,7 @@ function fix_github_remote() {
 
   # Extract repo name from URL (handles both git@github.com:user/repo.git and https://github.com/user/repo.git)
   local repo_name
-  repo_name=$(echo "$current_url" | sed -E 's#.*[:/]natemarks/([^/]+)(\.git)?$#\1#')
+  repo_name=$(echo "$current_url" | sed -E 's#.*[:/]natemarks/##' | sed 's/\.git$//')
 
   local new_url="git@github-natemarks:natemarks/${repo_name}.git"
 
