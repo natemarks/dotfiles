@@ -54,6 +54,7 @@ output = json
 sso_start_url = https://imprivata.awsapps.com/start/#
 sso_region = us-east-1
 sso_account_id = 368310207169
+sso_session = imprivata
 sso_role_name = SandboxPowerUser
 region = us-east-1
 output = json
