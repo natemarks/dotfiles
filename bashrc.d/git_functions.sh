@@ -58,3 +58,43 @@ function fix_github_remote() {
     return 1
   fi
 }
+
+# Add natemarks GitHub remote based on current directory name
+function add_natemarks_remote() {
+  local remote_name="${1:-origin}"
+  local repo_name
+
+  # Get current directory name
+  repo_name=$(basename "$PWD")
+
+  # Check if we're in a git repository
+  if ! git rev-parse --is-inside-work-tree &>/dev/null; then
+    echo "Error: Not in a git repository"
+    return 1
+  fi
+
+  # Check if remote already exists
+  if git remote get-url "$remote_name" &>/dev/null; then
+    echo "Error: Remote '$remote_name' already exists"
+    echo "Current URL: $(git remote get-url "$remote_name")"
+    echo ""
+    echo "To update it, use: fix_github_remote $remote_name"
+    return 1
+  fi
+
+  local new_url="git@github-natemarks:natemarks/${repo_name}.git"
+
+  echo "Adding remote '$remote_name' for repository: $repo_name"
+  echo "  URL: $new_url"
+
+  git remote add "$remote_name" "$new_url"
+
+  if [ $? -eq 0 ]; then
+    echo "✓ Successfully added remote"
+    echo ""
+    echo "Verify with: git remote -v"
+  else
+    echo "✗ Failed to add remote"
+    return 1
+  fi
+}
