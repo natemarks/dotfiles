@@ -2,40 +2,45 @@
 region = us-east-1
 output = json
 [profile AdministratorAccess-709310380790]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 709310380790
 sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 [profile AdministratorAccess-151924297945]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 151924297945
 sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 [profile AdministratorAccess-468716396736]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 468716396736
 sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 [profile AdministratorAccess-371143864265]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 371143864265
 sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
+[sso-session imprivata]
+sso_start_url=https://imprivata.awsapps.com/start
+sso_region=us-east-1
+sso_registration_scopes=sso:account:access
+
 [profile jklep-admin]
 region = us-east-1
 output = json
 
 [profile ImprivataIT-749607070042]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 749607070042
 sso_role_name = AdministratorAccess
@@ -43,7 +48,7 @@ region = us-east-1
 output = json
 
 [profile tech-pubs-sso]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 690242320669
 sso_role_name = AdministratorAccess
@@ -60,7 +65,7 @@ output = json
 duration_seconds = 43200
 
 [profile bedrock-dev]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 787222310730
 sso_role_name = AWSAdministratorAccess
@@ -68,7 +73,7 @@ region = us-east-1
 output = json
 
 [profile bedrock-prod]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 183679576862
 sso_role_name = AdministratorAccess
@@ -76,7 +81,7 @@ region = us-east-2
 output = json
 
 [profile bi-test-538263340534]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 538263340534
 sso_role_name = AdministratorAccess
@@ -84,7 +89,7 @@ region = us-west-2
 output = json
 
 [profile onesign-cloudops-159079727094]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 159079727094
 sso_role_name = AdministratorAccess
@@ -92,7 +97,7 @@ region = us-east-1
 output = json
 
 [profile it-infrastructure-568650999030]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 568650999030
 sso_role_name = AdministratorAccess
@@ -101,7 +106,7 @@ output = json
 
 
 [profile bi-prod-882805240806]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 882805240806
 sso_role_name = AdministratorAccess
@@ -109,7 +114,7 @@ region = us-east-2
 output = json
 
 [profile digicert_epcs]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 874536229570
 sso_role_name = AdministratorAccess
@@ -117,7 +122,7 @@ region = us-east-1
 output = json
 
 [profile pcm_sandbox]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 014160138715
 sso_role_name = AdministratorAccess
@@ -161,7 +166,7 @@ region = us-east-1
 output = json
 
 [profile prod-audit]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 764772158374
 sso_role_name = AdministratorAccess
@@ -169,7 +174,7 @@ region = us-east-1
 output = json
 
 [profile prod-archive]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 893256823091
 sso_role_name = AWSAdministratorAccess
@@ -177,7 +182,7 @@ region = us-east-1
 output = json
 
 [profile prod-root]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 261096313942
 sso_role_name = AdministratorAccess
@@ -201,7 +206,7 @@ region = us-east-1
 output = json
 
 [profile production]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 468716396736
 sso_role_name = AdministratorAccess
@@ -217,7 +222,7 @@ region = us-east-1
 output = json
 
 [profile imprivata-sandbox]
-sso_start_url = https://imprivata.awsapps.com/start/#
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 709310380790
 sso_role_name = AdministratorAccess
@@ -235,11 +240,6 @@ output = json
 [profile customersupport-va]
 region = us-east-1
 output = json
-
-[sso-session imprivata]
-sso_start_url=https://imprivata.awsapps.com/start
-sso_region=us-east-1
-sso_registration_scopes=sso:account:access
 
 [profile imprivata-709310380790-AdministratorAccess]
 sso_session=imprivata
