@@ -19,5 +19,6 @@
 [credential "https://git-codecommit.*.amazonaws.com"]
 	helper = !aws codecommit credential-helper $@
 [credential "https://git-codecommit.us-east-1.amazonaws.com/v1/repos/ImprLza01-config"]
+	helper =
 	helper = !aws --profile prod-root codecommit credential-helper $@
 	UseHttpPath = true
