@@ -195,7 +195,7 @@ region = us-east-1
 output = json
 
 [profile prod-eam-ami]
-sso_session = prod-imprivata
+sso_session = imprivata
 sso_region = us-east-1
 sso_account_id = 601440148950
 sso_role_name = AWSAdministratorAccess
