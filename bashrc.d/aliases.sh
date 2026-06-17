@@ -40,7 +40,7 @@ alias aws_prod_archive='export AWS_PROFILE=prod-archive && aws sso login --sso-s
 alias aws_prod_audit='export AWS_PROFILE=prod-audit && aws sso login --sso-session imprivata'
 alias aws_prod_root='export AWS_PROFILE=prod-root && aws sso login --sso-session imprivata'
 alias aws_digicert_epcs='export AWS_PROFILE=digicert_epcs && aws sso login --sso-session imprivata'
-alias aws_nonprod_eam_ami='export AWS_PROFILE=nonprod-eam-ami && aws sso login --sso-session nonprod-imprivata'
+alias aws_prod_eam_ami='export AWS_PROFILE=prod-eam-ami && aws sso login --sso-session imprivata'
 alias aws_imprivata-nmarks='export AWS_PROFILE=imprivata-nmarks'
 alias aws_imprivata_it='export AWS_PROFILE=ImprivataIT-749607070042'
 alias aws_impr-it='export AWS_PROFILE=impr-it'
