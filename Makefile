@@ -80,6 +80,8 @@ bin: ## create and configure $HOME/bin
 	$(LN) $(PRJ)/bin/create_ssh_key.sh $(HOME)/bin/create_ssh_key.sh
 	-rm -f $(HOME)/bin/t-kill
 	$(LN) $(PRJ)/bin/t-kill $(HOME)/bin/t-kill
+	-rm -f $(HOME)/bin/backup_home.sh
+	$(LN) $(PRJ)/bin/backup_home.sh $(HOME)/bin/backup_home.sh
 	@if [ -f $(PRJ)/bin/whisper-stream-wrapper.sh ]; then \
 		rm -f $(HOME)/bin/whisper-stream; \
 		$(LN) $(PRJ)/bin/whisper-stream-wrapper.sh $(HOME)/bin/whisper-stream; \
