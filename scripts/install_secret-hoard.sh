@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-VERSION="1.0.0"
+VERSION="1.0.1"
 TARBALL="secret-hoard_v${VERSION}_linux_amd64.tar.gz"
 URL="https://github.com/natemarks/secret-hoard/releases/download/v${VERSION}/${TARBALL}"
 DOWNLOAD_DIR="$(mktemp -d -t secret-hoard.XXXXXX)"
