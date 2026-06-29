@@ -70,6 +70,16 @@ output = json
 duration_seconds = 43200
 
 
+[profile claude-power]
+sso_region = us-east-1
+sso_account_id = 368310207169
+sso_session = imprivata
+sso_role_name = AWSClaudeCode-PowerUser
+region = us-east-1
+output = json
+duration_seconds = 43200
+
+
 [profile claude-standard]
 sso_region = us-east-1
 sso_account_id = 368310207169
