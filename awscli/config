@@ -79,6 +79,15 @@ region = us-east-1
 output = json
 duration_seconds = 43200
 
+[profile claude-admin]
+sso_region = us-east-1
+sso_account_id = 368310207169
+sso_session = imprivata
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = json
+duration_seconds = 43200
+
 
 [profile claude-standard]
 sso_region = us-east-1
