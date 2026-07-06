@@ -170,6 +170,7 @@ packages: ## install required packages
 	git \
 	tree \
 	make \
+	musl-tools \
 	wget \
 	zip \
 	unzip \
