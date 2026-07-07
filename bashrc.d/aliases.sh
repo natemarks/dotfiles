@@ -65,3 +65,5 @@ alias extensions="find . -type f -maxdepth 1 | sed -n 's/..*\.//p' | sort -u"
 alias ff="yazi"
 alias pkzoom="pkill zoom"
 alias whisper='whisper-stream -c 2'
+alias ts_up='tailscale up  --exit-node=100.84.119.96 --accept-routes --report-posture'
+alias ts_down='tailscale down'
