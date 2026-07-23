@@ -60,6 +60,24 @@ sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
+[profile beta-claude-code]
+sso_region = us-east-1
+sso_account_id = 368310207169
+sso_session = imprivata
+sso_role_name = BetaClaudeCode-StandardUser
+region = us-east-1
+output = json
+duration_seconds = 43200
+
+[profile beta-claude-power]
+sso_region = us-east-1
+sso_account_id = 368310207169
+sso_session = imprivata
+sso_role_name = BetaClaudeCode-PowerUser
+region = us-east-1
+output = json
+duration_seconds = 43200
+
 [profile claude-code]
 sso_region = us-east-1
 sso_account_id = 368310207169
@@ -74,7 +92,7 @@ duration_seconds = 43200
 sso_region = us-east-1
 sso_account_id = 368310207169
 sso_session = imprivata
-sso_role_name = AWSClaudeCode-PowerUser
+sso_role_name = ClaudeCode-PowerUser
 region = us-east-1
 output = json
 duration_seconds = 43200
