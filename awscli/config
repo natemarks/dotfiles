@@ -148,6 +148,15 @@ sso_role_name = AdministratorAccess
 region = us-west-2
 output = json
 
+[profile bi-prod-882805240806]
+sso_session = imprivata
+sso_region = us-east-1
+sso_account_id = 538263340534
+sso_role_name = AdministratorAccess
+region = us-east-2
+output = json
+
+[profile onesign-cloudops-159079727094]
 [profile onesign-cloudops-159079727094]
 sso_session = imprivata
 sso_region = us-east-1
