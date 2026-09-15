@@ -172,15 +172,6 @@ sso_role_name = AdministratorAccess
 region = us-east-1
 output = json
 
-
-[profile bi-prod-882805240806]
-sso_session = imprivata
-sso_region = us-east-1
-sso_account_id = 882805240806
-sso_role_name = AdministratorAccess
-region = us-east-2
-output = json
-
 [profile digicert_epcs]
 sso_session = imprivata
 sso_region = us-east-1
