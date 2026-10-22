@@ -249,6 +249,9 @@ claude: nodejs configure_npm ## install claude ode
 lazygit: ## install lazygit
 	bash scripts/install_lazygit.sh
 
+betterleaks: ## install latest betterleaks
+	bash scripts/install_betterleaks.sh
+
 gh-credential-manager: ## install git credential manager
 	bash scripts/install_gh_credential_mgr.sh
 
